@@ -637,5 +637,31 @@ module.exports = {
 
     //https://typescript-eslint.io/rules/prefer-ts-expect-error/
     "@typescript-eslint/prefer-ts-expect-error": "error",
+
+    "putout/add-newlines-between-types-in-union": "error",
+    "putout/add-newlines-between-specifiers": "error",
+    "putout/add-newline-before-return": "error",
+    "putout/add-newline-before-function-call": "error",
+    "putout/add-newline-after-function-call": "error",
+    "putout/putout": "error",
+    "putout/array-element-newline": "error",
+    "putout/single-property-destructuring": "error",
+    "putout/long-properties-destructuring": "error",
+    "putout/destructuring-as-function-argument": "error",
+    "putout/align-spaces": "error",
+    "putout/keyword-spacing": "error",
+    "putout/newline-function-call-arguments": "error",
+    "putout/function-declaration-paren-newline": "error",
+    "putout/remove-newline-after-default-import": "error",
+    "putout/remove-newline-between-declarations": "error",
+    "putout/remove-newline-from-empty-object": "error",
+    "putout/remove-empty-newline-before-first-specifier": "error",
+    "putout/remove-empty-newline-after-last-specifier": "error",
+    "putout/remove-empty-newline-after-last-element": "error",
+    "putout/remove-empty-newline-after-import": "error",
+    "putout/remove-empty-specifiers": "error",
+    "putout/tape-add-newline-between-tests": "error",
+    "putout/tape-add-newline-before-assertion": "error",
+    "putout/tape-remove-newline-before-t-end": "error"
   },
 }
