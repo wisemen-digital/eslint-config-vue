@@ -271,7 +271,7 @@ module.exports = {
      * ✓ v-for="user in users"
      * ✗ v-for="user of users"
      */
-    "vue/v-for-delimiter-style": ["error", "in"],
+    "vue/v-for-delimiter-style": ["error", "of"],
 
     /**
      * https://eslint.vuejs.org/rules/v-on-event-hyphenation.html
@@ -493,7 +493,7 @@ module.exports = {
     /*
     * https://eslint.org/docs/rules/
     */
-    "comma-dangle": ["error", "never"],
+    "comma-dangle": ["error", "always-multiline"],
 
     /*
     *
@@ -505,18 +505,18 @@ module.exports = {
     */
     "object-curly-spacing": ["error", "always"],
 
-    //Te bekijken of deze regels nuttig zijn
-    "@typescript-eslint/unbound-method": "off", // te bekijken of deze echt nodig is
-    "@typescript-eslint/no-inferrable-types": "error", //te bekijken of ie werkt zoals we denken dat die werkt
-    "@typescript-eslint/no-for-in-array": "error", // te bekijken met jeffrey
-    "@typescript-eslint/no-unnecessary-type-assertion": "off", //lijkt overkill
+    // DONE + NEED Documentation (link + example)
+    "@typescript-eslint/class-literal-property-style": "error",
+    "@typescript-eslint/consistent-type-assertions": "error",
+    "@typescript-eslint/no-unnecessary-type-assertion": "error",
+    "@typescript-eslint/no-inferrable-types": "error",
+    "@typescript-eslint/unbound-method": "error",
     "@typescript-eslint/no-unsafe-argument": "error",
     "@typescript-eslint/no-unsafe-assignment": "error",
     "@typescript-eslint/no-unsafe-call": "error",
     "@typescript-eslint/no-unsafe-member-access": "error",
     "@typescript-eslint/no-unsafe-return": "error",
-
-    // DONE + NEED Documentation (link + example)
+    "@typescript-eslint/no-for-in-array": "error",
     "@typescript-eslint/await-thenable": "error",
     "no-implied-eval": "off",
     "@typescript-eslint/no-implied-eval": "error",
@@ -544,6 +544,7 @@ module.exports = {
     "@typescript-eslint/no-meaningless-void-operator": "error",
     "@typescript-eslint/no-mixed-enums": "error",
     "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
+
     "no-throw-literal": "off",
     "@typescript-eslint/no-throw-literal": "error",
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
@@ -564,18 +565,11 @@ module.exports = {
     //https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-tslint-comment.md
     "@typescript-eslint/ban-tslint-comment": "error",
 
-    //https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/class-literal-property-style.md
-    "@typescript-eslint/class-literal-property-style": "error",
-
     //https://typescript-eslint.io/rules/consistent-indexed-object-style/
     "@typescript-eslint/consistent-indexed-object-style": "error",
 
-    //https://typescript-eslint.io/rules/consistent-type-assertions/
-    "@typescript-eslint/consistent-type-assertions": "error",
-
-    //andy
     //https://typescript-eslint.io/rules/consistent-type-definitions/
-    "@typescript-eslint/consistent-type-definitions": "error",
+    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
 
     "dot-notation": "off",
 
