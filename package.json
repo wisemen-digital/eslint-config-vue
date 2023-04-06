@@ -1,6 +1,6 @@
 {
   "name": "@appwise/eslint-config-vue",
-  "version": "0.0.2",
+  "version": "0.0.42",
   "description": "Eslint config",
   "main": "index.js",
   "author": "",
@@ -20,7 +20,6 @@
     "eslint-plugin-tailwindcss": "3.10.1",
     "eslint-plugin-unused-imports": "2.0.0",
     "eslint-plugin-vue": "9.10.0",
-    "prettier": "2.8.4",
     "putout": "29.1.11"
   },
   "devDependencies": {

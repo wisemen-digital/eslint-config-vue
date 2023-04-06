@@ -2,7 +2,6 @@ module.exports = {
   "extends": [
     "plugin:vue/vue3-recommended",
     "@vue/eslint-config-typescript/recommended",
-    "plugin:prettier/recommended"
   ],
 
   "plugins": [
@@ -11,12 +10,15 @@ module.exports = {
     "unused-imports",
     "check-file",
     "putout",
-    "prettier"
   ],
 
-  "rules": {
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "project": "./tsconfig.json",
+    "extraFileExtensions": [".vue"]
+  },
 
-    // TODO
+  "rules": {
     "camelcase": ["error", {
       "properties": "always",
     }],
@@ -643,7 +645,7 @@ module.exports = {
     "putout/add-newline-before-return": "error",
     "putout/add-newline-before-function-call": "error",
     "putout/add-newline-after-function-call": "error",
-    "putout/putout": "error",
+    // "putout/putout": "error",
     "putout/array-element-newline": "error",
     "putout/single-property-destructuring": "error",
     "putout/long-properties-destructuring": "error",
@@ -653,7 +655,7 @@ module.exports = {
     "putout/newline-function-call-arguments": "error",
     "putout/function-declaration-paren-newline": "error",
     "putout/remove-newline-after-default-import": "error",
-    "putout/remove-newline-between-declarations": "error",
+    // "putout/remove-newline-between-declarations": "error",
     "putout/remove-newline-from-empty-object": "error",
     "putout/remove-empty-newline-before-first-specifier": "error",
     "putout/remove-empty-newline-after-last-specifier": "error",
