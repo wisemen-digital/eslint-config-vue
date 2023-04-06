@@ -15,30 +15,12 @@ module.exports = {
   ],
 
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "semi": false,
-        "tabWidth": 2,
-        "singleQuote": true,
-        "jsxSingleQuote": true,
-        "bracketSpacing": true,
-        "printWidth": 100,
-        "trailingComma": "es5",
-        "bracketSameLine": false,
-        "useTabs": false,
-        "arrowParens": "always",
-        "singleAttributePerLine": true,
-        "endOfLine": "auto",
-        "quoteProps": "consistent"
-      }
-    ],
 
     // TODO
     "camelcase": ["error", {
       "properties": "always",
     }],
-    
+
     /**
      * Don't allow unused variables
      */
@@ -47,18 +29,18 @@ module.exports = {
 
     /**
      * @link https://eslint.org/docs/latest/rules/brace-style
-     * 
+     *
      * ✓ if (foo) {
-     *  
+     *
      * } else {
-     * 
+     *
      * }
-     * 
+     *
      * ✗ if (foo) {
-     *  
+     *
      * }
      * else {
-     * 
+     *
      * }
      */
     "brace-style": [
@@ -82,7 +64,7 @@ module.exports = {
      * ✓ if (foo) {
      *  return bar
      * }
-     * 
+     *
      * ✗ if (foo)
      *  return bar
      */
@@ -202,7 +184,7 @@ module.exports = {
     "eslint-comments/no-unlimited-disable": "off",
 
     /**
-     * 
+     *
      */
     "vue/max-len": [
       "error",
@@ -234,12 +216,11 @@ module.exports = {
      */
     "@typescript-eslint/explicit-function-return-type": "error",
 
-    
     "nonblock-statement-body-position": "off",
 
     /**
      * A function callback parameter must always be wrapped by ()
-     * 
+     *
      * ✓ (foo) => foo
      * ✗ foo => foo
      */
@@ -290,7 +271,7 @@ module.exports = {
      * ✓ v-for="user in users"
      * ✗ v-for="user of users"
      */
-    "vue/v-for-delimiter-style": ["error", "in"],
+    "vue/v-for-delimiter-style": ["error", "of"],
 
     /**
      * https://eslint.vuejs.org/rules/v-on-event-hyphenation.html
@@ -490,5 +471,197 @@ module.exports = {
      * ✗ {{ foo() }}
      */
     "vue/no-restricted-syntax": ["error"],
+
+    "putout/object-property-newline": "error",
+    /*
+     * https://eslint.org/docs/rules/indent
+     *
+     * Use tabs for indentation
+     * */
+    "indent": ["error", "tab"],
+
+    /*
+    * https://eslint.org/docs/rules/quotes
+    */
+    "quotes": ["error", "single"],
+
+    /*
+    * https://eslint.org/docs/rules/semi
+    */
+    "semi": ["error", "never"],
+
+    /*
+    * https://eslint.org/docs/rules/
+    */
+    "comma-dangle": ["error", "always-multiline"],
+
+    /*
+    *
+    */
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0}],
+
+    /*
+    *
+    */
+    "object-curly-spacing": ["error", "always"],
+
+    // DONE + NEED Documentation (link + example)
+    "@typescript-eslint/class-literal-property-style": "error",
+    "@typescript-eslint/consistent-type-assertions": "error",
+    "@typescript-eslint/no-unnecessary-type-assertion": "error",
+    "@typescript-eslint/no-inferrable-types": "error",
+    "@typescript-eslint/unbound-method": "error",
+    "@typescript-eslint/no-unsafe-argument": "error",
+    "@typescript-eslint/no-unsafe-assignment": "error",
+    "@typescript-eslint/no-unsafe-call": "error",
+    "@typescript-eslint/no-unsafe-member-access": "error",
+    "@typescript-eslint/no-unsafe-return": "error",
+    "@typescript-eslint/no-for-in-array": "error",
+    "@typescript-eslint/await-thenable": "error",
+    "no-implied-eval": "off",
+    "@typescript-eslint/no-implied-eval": "error",
+    "@typescript-eslint/no-misused-promises": "error",
+    "require-await": "off",
+    "@typescript-eslint/require-await": "error",
+    "@typescript-eslint/restrict-plus-operands": "error",
+    "@typescript-eslint/restrict-template-expressions": "error",
+    "@typescript-eslint/adjacent-overload-signatures": "error",
+    "@typescript-eslint/ban-ts-comment": "error",
+    "no-array-constructor": "off",
+    "@typescript-eslint/no-array-constructor": "error",
+    "no-empty-function": "off",
+    "@typescript-eslint/no-empty-function": "error",
+    "@typescript-eslint/no-empty-interface": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-extra-non-null-assertion": "error",
+    "no-loss-of-precision": "off",
+    "@typescript-eslint/no-loss-of-precision": "error",
+    "@typescript-eslint/no-misused-new": "error",
+    "@typescript-eslint/no-namespace": "error",
+    "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
+    "@typescript-eslint/no-non-null-assertion": "error",
+    "@typescript-eslint/no-this-alias": "error",
+    "@typescript-eslint/no-meaningless-void-operator": "error",
+    "@typescript-eslint/no-mixed-enums": "error",
+    "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
+
+    "no-throw-literal": "off",
+    "@typescript-eslint/no-throw-literal": "error",
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
+    "@typescript-eslint/no-unnecessary-condition": "error",
+
+    // TODO
+
+    //tanya
+    //https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unnecessary-type-constraint.md
+    "@typescript-eslint/no-unnecessary-type-constraint": "error",
+
+    //https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-var-requires.md
+    "@typescript-eslint/no-var-requires": "error",
+
+    //https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-namespace-keyword.md
+    "@typescript-eslint/prefer-namespace-keyword": "error",
+
+    //https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-tslint-comment.md
+    "@typescript-eslint/ban-tslint-comment": "error",
+
+    //https://typescript-eslint.io/rules/consistent-indexed-object-style/
+    "@typescript-eslint/consistent-indexed-object-style": "error",
+
+    //https://typescript-eslint.io/rules/consistent-type-definitions/
+    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+
+    "dot-notation": "off",
+
+    //https://typescript-eslint.io/rules/dot-notation/
+    "@typescript-eslint/dot-notation": "error",
+
+    //https://typescript-eslint.io/rules/no-base-to-string/
+    "@typescript-eslint/no-base-to-string": "error",
+
+    //https://typescript-eslint.io/rules/no-confusing-non-null-assertion/
+    "@typescript-eslint/no-confusing-non-null-assertion": "error",
+
+    //https://typescript-eslint.io/rules/no-dynamic-delete/
+    "@typescript-eslint/no-dynamic-delete": "error",
+
+    //https://typescript-eslint.io/rules/no-extraneous-class/
+    "@typescript-eslint/no-extraneous-class": "error",
+
+    //https://typescript-eslint.io/rules/no-invalid-void-type/
+    "@typescript-eslint/no-invalid-void-type": "error",
+
+    //Jeffrey
+
+    //https://typescript-eslint.io/rules/no-unnecessary-type-arguments/
+    "@typescript-eslint/no-unnecessary-type-arguments": "error",
+
+    //https://typescript-eslint.io/rules/no-unsafe-declaration-merging/
+    "@typescript-eslint/no-unsafe-declaration-merging": "error",
+
+    //https://typescript-eslint.io/rules/no-useless-constructor/
+    "no-useless-constructor": "off",
+    "@typescript-eslint/no-useless-constructor": "error",
+
+    //https://typescript-eslint.io/rules/non-nullable-type-assertion-style/
+    "@typescript-eslint/non-nullable-type-assertion-style": "error",
+
+    //https://typescript-eslint.io/rules/prefer-for-of/
+    "@typescript-eslint/prefer-for-of": "error",
+
+    //https://typescript-eslint.io/rules/prefer-function-type/
+    "@typescript-eslint/prefer-function-type": "error",
+
+    //@Koen
+
+    //https://typescript-eslint.io/rules/prefer-includes/
+    "@typescript-eslint/prefer-includes": "error",
+
+    //https://typescript-eslint.io/rules/prefer-literal-enum-member/
+    "@typescript-eslint/prefer-literal-enum-member": "error",
+
+    //https://typescript-eslint.io/rules/prefer-nullish-coalescing/
+    "@typescript-eslint/prefer-nullish-coalescing": "error",
+
+    //https://typescript-eslint.io/rules/prefer-optional-chain/
+    "@typescript-eslint/prefer-optional-chain": "error",
+
+    //https://typescript-eslint.io/rules/prefer-reduce-type-parameter/
+    "@typescript-eslint/prefer-reduce-type-parameter": "error",
+
+    //https://typescript-eslint.io/rules/prefer-return-this-type/
+    "@typescript-eslint/prefer-return-this-type": "error",
+
+    //https://typescript-eslint.io/rules/prefer-string-starts-ends-with/
+    "@typescript-eslint/prefer-string-starts-ends-with": "error",
+
+    //https://typescript-eslint.io/rules/prefer-ts-expect-error/
+    "@typescript-eslint/prefer-ts-expect-error": "error",
+
+    "putout/add-newlines-between-types-in-union": "error",
+    "putout/add-newlines-between-specifiers": "error",
+    "putout/add-newline-before-return": "error",
+    "putout/add-newline-before-function-call": "error",
+    "putout/add-newline-after-function-call": "error",
+    "putout/putout": "error",
+    "putout/array-element-newline": "error",
+    "putout/single-property-destructuring": "error",
+    "putout/long-properties-destructuring": "error",
+    "putout/destructuring-as-function-argument": "error",
+    "putout/align-spaces": "error",
+    "putout/keyword-spacing": "error",
+    "putout/newline-function-call-arguments": "error",
+    "putout/function-declaration-paren-newline": "error",
+    "putout/remove-newline-after-default-import": "error",
+    "putout/remove-newline-between-declarations": "error",
+    "putout/remove-newline-from-empty-object": "error",
+    "putout/remove-empty-newline-before-first-specifier": "error",
+    "putout/remove-empty-newline-after-last-specifier": "error",
+    "putout/remove-empty-newline-after-last-element": "error",
+    "putout/remove-empty-newline-after-import": "error",
+    "putout/remove-empty-specifiers": "error",
+    "putout/tape-add-newline-between-tests": "error",
+    "putout/tape-add-newline-before-assertion": "error",
+    "putout/tape-remove-newline-before-t-end": "error"
   },
 }
