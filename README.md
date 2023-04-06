@@ -1,37 +1,44 @@
-`eslintrc.json`
-```json
-{
-  {
-    "env": {
-      "es2021": true,
-      "node": true,
-      "commonjs": true,
-      "mocha": true
-    },
-    "extends": [
-      "wouter"
-    ],
-    "settings": {
-      "import/resolver": {
-        "node": {
-          "extensions": [".js", ".ts", ".d.ts", ".json", ".vue"]
-        },
+# ESLint Config
 
-        "alias": {
-          "map": [["@", "./src", "~", "./"]],
-          "extensions": [".js", ".vue", ".ts", ".d.ts"]
-        }
-      }
-    },
-    "parserOptions": {
-      "parser": "@typescript-eslint/parser",
-      "project": "./tsconfig.json",
-      "extraFileExtensions": [".vue"]
-    }
+Every project uses the same ESlint config. This is to ensure that all projects are consistent and that we don't have to spend time on code style.
+
+[NPM Package](https://www.npmjs.com/package/@appwise/eslint-config-vue)
+
+## Installation
+
+#### 1. Install the package
+
+```
+`npm i -D @appwise/eslint-config-vue`
+```
+
+#### 2. Add the following to your `.eslintrc.json`:
+
+```json
+//.eslintrc.json
+{
+  "extends": "@appwise/eslint-config-vue"
+}
+```
+
+#### 3. Add script to `package.json`
+
+```json
+//package.json
+{
+  "scripts": {
+    "lint": "eslint --ext .js,.vue src"
   }
 }
 ```
 
-```
-npm i -D eslint-config-appwise eslint eslint-config-standard-with-typescript eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-putout eslint-plugin-unused-imports putout
-```
+#### 4. Profit
+
+Enjoy the awesome code style!
+
+## Rules overview
+
+- Single quotes
+- No semicolons
+- No trailing commas
+- No console logs
