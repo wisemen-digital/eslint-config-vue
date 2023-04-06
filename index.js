@@ -15,24 +15,6 @@ module.exports = {
   ],
 
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "semi": false,
-        "tabWidth": 2,
-        "singleQuote": true,
-        "jsxSingleQuote": true,
-        "bracketSpacing": true,
-        "printWidth": 100,
-        "trailingComma": "es5",
-        "bracketSameLine": false,
-        "useTabs": false,
-        "arrowParens": "always",
-        "singleAttributePerLine": true,
-        "endOfLine": "auto",
-        "quoteProps": "consistent"
-      }
-    ],
 
     // TODO
     "camelcase": ["error", {
@@ -233,7 +215,6 @@ module.exports = {
      * A function return type must be defined
      */
     "@typescript-eslint/explicit-function-return-type": "error",
-
 
     "nonblock-statement-body-position": "off",
 
@@ -499,105 +480,168 @@ module.exports = {
      * */
     "indent": ["error", "tab"],
 
+    /*
+    * https://eslint.org/docs/rules/quotes
+    */
     "quotes": ["error", "single"],
+
+    /*
+    * https://eslint.org/docs/rules/semi
+    */
     "semi": ["error", "never"],
+
+    /*
+    * https://eslint.org/docs/rules/
+    */
+    "comma-dangle": ["error", "never"],
+
+    /*
+    *
+    */
     "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0}],
-    "@typescript-eslint/await-thenable": "error",
 
+    /*
+    *
+    */
+    "object-curly-spacing": ["error", "always"],
+
+    //Te bekijken of deze regels nuttig zijn
+    "@typescript-eslint/unbound-method": "off", // te bekijken of deze echt nodig is
+    "@typescript-eslint/no-inferrable-types": "error", //te bekijken of ie werkt zoals we denken dat die werkt
     "@typescript-eslint/no-for-in-array": "error", // te bekijken met jeffrey
-
-    //@wouter DONE
-    "no-implied-eval": "off",
-    "@typescript-eslint/no-implied-eval": "error",
-
-    "@typescript-eslint/no-misused-promises": "error",
     "@typescript-eslint/no-unnecessary-type-assertion": "off", //lijkt overkill
     "@typescript-eslint/no-unsafe-argument": "error",
     "@typescript-eslint/no-unsafe-assignment": "error",
     "@typescript-eslint/no-unsafe-call": "error",
     "@typescript-eslint/no-unsafe-member-access": "error",
     "@typescript-eslint/no-unsafe-return": "error",
-    //kunnen de bovenstaande regels vervangen door geen any's toestaan?
 
-    //@jeroen DONE
+    // DONE + NEED Documentation (link + example)
+    "@typescript-eslint/await-thenable": "error",
+    "no-implied-eval": "off",
+    "@typescript-eslint/no-implied-eval": "error",
+    "@typescript-eslint/no-misused-promises": "error",
     "require-await": "off",
     "@typescript-eslint/require-await": "error",
     "@typescript-eslint/restrict-plus-operands": "error",
     "@typescript-eslint/restrict-template-expressions": "error",
-    "@typescript-eslint/unbound-method": "off", // te bekijken of deze echt nodig is
     "@typescript-eslint/adjacent-overload-signatures": "error",
     "@typescript-eslint/ban-ts-comment": "error",
     "no-array-constructor": "off",
     "@typescript-eslint/no-array-constructor": "error",
-
-
-    // @liam DONE
     "no-empty-function": "off",
     "@typescript-eslint/no-empty-function": "error",
-
     "@typescript-eslint/no-empty-interface": "error",
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/no-extra-non-null-assertion": "error",
-
-    "@typescript-eslint/no-inferrable-types": "error", //te bekijken of ie werkt zoals we denken dat die werkt
-
-    // @nick DONE
     "no-loss-of-precision": "off",
     "@typescript-eslint/no-loss-of-precision": "error",
-
     "@typescript-eslint/no-misused-new": "error",
     "@typescript-eslint/no-namespace": "error",
     "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
     "@typescript-eslint/no-non-null-assertion": "error",
     "@typescript-eslint/no-this-alias": "error",
-
-    //Kiryl DONE
     "@typescript-eslint/no-meaningless-void-operator": "error",
     "@typescript-eslint/no-mixed-enums": "error",
     "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
-
     "no-throw-literal": "off",
     "@typescript-eslint/no-throw-literal": "error",
-
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
     "@typescript-eslint/no-unnecessary-condition": "error",
 
+    // TODO
+
     //tanya
+    //https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unnecessary-type-constraint.md
     "@typescript-eslint/no-unnecessary-type-constraint": "error",
+
+    //https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-var-requires.md
     "@typescript-eslint/no-var-requires": "error",
+
+    //https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-namespace-keyword.md
     "@typescript-eslint/prefer-namespace-keyword": "error",
-    "@typescript-eslint/ban-tslint-comment": "warn",
-    "@typescript-eslint/class-literal-property-style": "warn",
-    "@typescript-eslint/consistent-indexed-object-style": "warn",
-    "@typescript-eslint/consistent-type-assertions": "warn",
+
+    //https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-tslint-comment.md
+    "@typescript-eslint/ban-tslint-comment": "error",
+
+    //https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/class-literal-property-style.md
+    "@typescript-eslint/class-literal-property-style": "error",
+
+    //https://typescript-eslint.io/rules/consistent-indexed-object-style/
+    "@typescript-eslint/consistent-indexed-object-style": "error",
+
+    //https://typescript-eslint.io/rules/consistent-type-assertions/
+    "@typescript-eslint/consistent-type-assertions": "error",
 
     //andy
-    "@typescript-eslint/consistent-type-definitions": "warn",
+    //https://typescript-eslint.io/rules/consistent-type-definitions/
+    "@typescript-eslint/consistent-type-definitions": "error",
+
     "dot-notation": "off",
-    "@typescript-eslint/dot-notation": "warn",
-    "@typescript-eslint/no-base-to-string": "warn",
-    "@typescript-eslint/no-confusing-non-null-assertion": "warn",
-    "@typescript-eslint/no-dynamic-delete": "warn",
-    "@typescript-eslint/no-extraneous-class": "warn",
-    "@typescript-eslint/no-invalid-void-type": "warn",
+
+    //https://typescript-eslint.io/rules/dot-notation/
+    "@typescript-eslint/dot-notation": "error",
+
+    //https://typescript-eslint.io/rules/no-base-to-string/
+    "@typescript-eslint/no-base-to-string": "error",
+
+    //https://typescript-eslint.io/rules/no-confusing-non-null-assertion/
+    "@typescript-eslint/no-confusing-non-null-assertion": "error",
+
+    //https://typescript-eslint.io/rules/no-dynamic-delete/
+    "@typescript-eslint/no-dynamic-delete": "error",
+
+    //https://typescript-eslint.io/rules/no-extraneous-class/
+    "@typescript-eslint/no-extraneous-class": "error",
+
+    //https://typescript-eslint.io/rules/no-invalid-void-type/
+    "@typescript-eslint/no-invalid-void-type": "error",
 
     //Jeffrey
-    "@typescript-eslint/no-unnecessary-type-arguments": "warn",
-    "@typescript-eslint/no-unsafe-declaration-merging": "warn",
+
+    //https://typescript-eslint.io/rules/no-unnecessary-type-arguments/
+    "@typescript-eslint/no-unnecessary-type-arguments": "error",
+
+    //https://typescript-eslint.io/rules/no-unsafe-declaration-merging/
+    "@typescript-eslint/no-unsafe-declaration-merging": "error",
+
+    //https://typescript-eslint.io/rules/no-useless-constructor/
     "no-useless-constructor": "off",
-    "@typescript-eslint/no-useless-constructor": "warn",
-    "@typescript-eslint/non-nullable-type-assertion-style": "warn",
-    "@typescript-eslint/prefer-for-of": "warn",
-    "@typescript-eslint/prefer-function-type": "warn",
+    "@typescript-eslint/no-useless-constructor": "error",
+
+    //https://typescript-eslint.io/rules/non-nullable-type-assertion-style/
+    "@typescript-eslint/non-nullable-type-assertion-style": "error",
+
+    //https://typescript-eslint.io/rules/prefer-for-of/
+    "@typescript-eslint/prefer-for-of": "error",
+
+    //https://typescript-eslint.io/rules/prefer-function-type/
+    "@typescript-eslint/prefer-function-type": "error",
 
     //@Koen
-    "@typescript-eslint/prefer-includes": "warn",
-    "@typescript-eslint/prefer-literal-enum-member": "warn",
-    "@typescript-eslint/prefer-nullish-coalescing": "warn",
-    "@typescript-eslint/prefer-optional-chain": "warn",
-    "@typescript-eslint/prefer-reduce-type-parameter": "warn",
-    "@typescript-eslint/prefer-return-this-type": "warn",
-    "@typescript-eslint/prefer-string-starts-ends-with": "warn",
-    "@typescript-eslint/prefer-ts-expect-error": "warn",
+
+    //https://typescript-eslint.io/rules/prefer-includes/
+    "@typescript-eslint/prefer-includes": "error",
+
+    //https://typescript-eslint.io/rules/prefer-literal-enum-member/
+    "@typescript-eslint/prefer-literal-enum-member": "error",
+
+    //https://typescript-eslint.io/rules/prefer-nullish-coalescing/
+    "@typescript-eslint/prefer-nullish-coalescing": "error",
+
+    //https://typescript-eslint.io/rules/prefer-optional-chain/
+    "@typescript-eslint/prefer-optional-chain": "error",
+
+    //https://typescript-eslint.io/rules/prefer-reduce-type-parameter/
+    "@typescript-eslint/prefer-reduce-type-parameter": "error",
+
+    //https://typescript-eslint.io/rules/prefer-return-this-type/
+    "@typescript-eslint/prefer-return-this-type": "error",
+
+    //https://typescript-eslint.io/rules/prefer-string-starts-ends-with/
+    "@typescript-eslint/prefer-string-starts-ends-with": "error",
+
+    //https://typescript-eslint.io/rules/prefer-ts-expect-error/
+    "@typescript-eslint/prefer-ts-expect-error": "error",
   },
 }
