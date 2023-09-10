@@ -16,7 +16,7 @@ Every project uses the same ESlint config. This is to ensure that all projects a
 
 ```json
 {
-  "extends": "@appwise/eslint-config-vue"
+  "extends": "@appwise/vue"
 }
 ```
 
