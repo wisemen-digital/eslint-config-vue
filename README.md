@@ -25,7 +25,7 @@ Every project uses the same ESlint config. This is to ensure that all projects a
 ```json
 {
   "scripts": {
-    "lint": "eslint --ext .js,.vue src"
+    "lint": "eslint . --ext .vue,.ts --fix --ignore-path .gitignore",
   }
 }
 ```
