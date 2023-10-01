@@ -1,29 +1,27 @@
 {
   "name": "@appwise/eslint-config-vue",
-  "version": "0.0.42",
-  "description": "Eslint config",
+  "version": "1.0.0",
+  "description": "Eslint config for Vue.js projects",
   "main": "index.js",
-  "author": "",
+  "author": "Wisemen",
   "license": "ISC",
   "dependencies": {
-    "@vue/eslint-config-typescript": "11.0.2",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-config-standard-with-typescript": "34.0.1",
-    "eslint-plugin-check-file": "2.1.0",
-    "eslint-plugin-import": "2.27.5",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-promise": "6.1.1",
-    "eslint-plugin-putout": "17.2.1",
+    "@intlify/eslint-plugin-vue-i18n": "2.0.0",
+    "@typescript-eslint/eslint-plugin": "6.7.3",
+    "@typescript-eslint/parser": "6.7.3",
+    "@vue/eslint-config-prettier": "8.0.0",
+    "@vue/eslint-config-typescript": "12.0.0",
+    "eslint": "8.50.0",
+    "eslint-plugin-check-file": "2.6.2",
+    "eslint-plugin-cypress": "2.15.1",
     "eslint-plugin-require-explicit-generics": "0.4.2",
     "eslint-plugin-simple-import-sort": "10.0.0",
-    "eslint-plugin-tailwindcss": "3.10.1",
-    "eslint-plugin-unused-imports": "2.0.0",
-    "eslint-plugin-vue": "9.10.0",
-    "putout": "29.1.11"
+    "eslint-plugin-sort-keys-fix": "1.1.2",
+    "eslint-plugin-unused-imports": "3.0.0",
+    "eslint-plugin-vue": "9.17.0"
   },
   "devDependencies": {
-    "eslint": "^8.37.0"
+    "eslint": "8.50.0"
   },
   "peerDependencies": {
     "eslint": ">= 8"
