@@ -1,24 +1,26 @@
 {
   "name": "@appwise/eslint-config-vue",
-  "version": "0.0.79",
+  "version": "1.1.0",
   "description": "Eslint config for Vue.js projects",
   "main": "index.js",
   "author": "Wisemen",
   "license": "ISC",
   "dependencies": {
     "@intlify/eslint-plugin-vue-i18n": "2.0.0",
-    "@typescript-eslint/eslint-plugin": "6.7.3",
-    "@typescript-eslint/parser": "6.7.3",
+    "@typescript-eslint/eslint-plugin": "6.7.4",
+    "@typescript-eslint/parser": "6.7.4",
     "@vue/eslint-config-prettier": "8.0.0",
     "@vue/eslint-config-typescript": "12.0.0",
-    "eslint": "8.50.0",
+    "eslint": "8.51.0",
     "eslint-plugin-check-file": "2.6.2",
     "eslint-plugin-cypress": "2.15.1",
     "eslint-plugin-require-explicit-generics": "0.4.2",
     "eslint-plugin-simple-import-sort": "10.0.0",
     "eslint-plugin-sort-keys-fix": "1.1.2",
     "eslint-plugin-unused-imports": "3.0.0",
-    "eslint-plugin-vue": "9.17.0"
+    "eslint-plugin-vue": "9.17.0",
+    "prettier": "3.0.3",
+    "prettier-plugin-tailwindcss": "0.5.5"
   },
   "devDependencies": {
     "eslint": "8.50.0"
