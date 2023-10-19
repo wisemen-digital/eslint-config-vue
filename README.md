@@ -21,7 +21,7 @@ This also ensures that all our projects are consistent and that we don't lose ti
 
 1. Install the package:
 ```bash
-npm i -D @appwise/vue-eslint-config
+npm i -D @appwise/eslint-config-vue
 ```
 
 2. Add the config to your `.eslintrc.json` file:
