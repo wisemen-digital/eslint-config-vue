@@ -44,7 +44,6 @@ module.exports = {
     "curly": "error",
     "no-console": "error",
     "no-unused-vars": "off",
-    "sort-keys-fix/sort-keys-fix": "error",
     "vue/no-unused-vars": "error",
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/consistent-type-imports": "error",
