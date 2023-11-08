@@ -16,6 +16,8 @@ module.exports = {
     "ecmaVersion": "latest"
   },
   "rules": {
+    "no-unused-expressions": "off",
+    "@typescript-eslint/no-unused-expressions": "error",
     "@intlify/vue-i18n/no-dynamic-keys": "error",
     "@intlify/vue-i18n/no-unused-keys": ["error", { "extensions": [",.js", ",.ts", ",.vue"] }],
     "@intlify/vue-i18n/no-raw-text": "off",
@@ -129,7 +131,8 @@ module.exports = {
         "arrowParens": "always",
         "singleAttributePerLine": true,
         "endOfLine": "auto",
-        "quoteProps": "consistent"
+        "quoteProps": "consistent",
+        "plugins": [require.resolve("prettier-plugin-tailwindcss")]
       }
     ],
     "check-file/filename-naming-convention": [
