@@ -47,13 +47,20 @@ module.exports = {
     "no-console": "error",
     "no-unused-vars": "off",
     "vue/no-unused-vars": "error",
-    "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/consistent-type-imports": "error",
     "@typescript-eslint/explicit-function-return-type": "error",
     "@typescript-eslint/consistent-generic-constructors": "error",
     "@typescript-eslint/array-type": "error",
     "@typescript-eslint/ban-types": "error",
     "@typescript-eslint/sort-type-constituents": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_"
+      }
+    ],
     "@typescript-eslint/no-duplicate-enum-values": "error",
     "@typescript-eslint/prefer-enum-initializers": "error",
     "require-explicit-generics/require-explicit-generics": ["warn", ["computed", "ref", "reactive", "defineEmits"]],
