@@ -1,6 +1,6 @@
 {
   "name": "@appwise/eslint-config-vue",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Eslint config for Vue.js projects",
   "main": "index.js",
   "author": "Wisemen",
