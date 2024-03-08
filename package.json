@@ -1,6 +1,6 @@
 {
   "name": "@wisemen/eslint-config-vue",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Eslint config for Vue.js projects",
   "main": "eslint.config.js",
   "author": "Wisemen",
