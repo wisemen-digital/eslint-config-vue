@@ -87,7 +87,7 @@ export default antfu(
       extends: ['plugin:cypress/recommended'],
       files: ['cypress/e2e/**/*.{cy,spec}.ts'],
     }],
-    plugins: ['require-explicit-generics', 'check-file', 'putout', 'simple-import-sort'],
+    plugins: ['require-explicit-generics', 'check-file', 'putout'],
     rules: {
       '@intlify/vue-i18n/key-format-style': ['error', 'snake_case'],
       '@intlify/vue-i18n/no-duplicate-keys-in-locale': 'error',
