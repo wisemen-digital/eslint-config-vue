@@ -18,17 +18,6 @@ export default antfu(
       'import/order': 'off',
       'no-implicit-coercion': ['error'],
       'require-await': ['error'],
-      'ts/no-floating-promises': 'error',
-      'ts/strict-boolean-expressions': ['error', {
-        allowAny: false,
-        allowNullableBoolean: false,
-        allowNullableEnum: false,
-        allowNullableNumber: false,
-        allowNullableObject: false,
-        allowNullableString: false,
-        allowNumber: false,
-        allowString: false,
-      }],
       'vue/attributes-order': [
         'error',
         {
@@ -68,14 +57,32 @@ export default antfu(
       indent: 2, // 4, or 'tab'
       quotes: 'single', // or 'double'
     },
-    typescript: true,
+    typescript: {
+      filesTypeAware: ['**\/*.{ts,tsx,vue}'],
+      overrides: {
+        'ts/no-floating-promises': 'error',
+        'ts/strict-boolean-expressions': ['error', {
+          allowAny: false,
+          allowNullableBoolean: false,
+          allowNullableEnum: false,
+          allowNullableNumber: false,
+          allowNullableObject: false,
+          allowNullableString: false,
+          allowNumber: false,
+          allowString: false,
+        }],
+      },
+      parserOptions: {
+        parser: '@typescript-eslint/parser',
+        project: './tsconfig.json',
+      },
+    },
     vue: true,
     yaml: false,
   },
   perfectionistNatural,
   ...compat.config({
     extends: ['plugin:tailwindcss/recommended', 'plugin:@intlify/vue-i18n/recommended'],
-    ignorePatterns: ['./github/**/*', 'package.json', 'tsconfig.json'],
     overrides: [{
       extends: ['plugin:cypress/recommended'],
       files: ['cypress/e2e/**/*.{cy,spec}.ts'],
@@ -144,16 +151,7 @@ export default antfu(
       'tailwindcss/no-custom-classname': ['error'],
     },
   }),
-  {
-    languageOptions: {
-      parserOptions: {
-        extraFileExtensions: ['.vue'],
-        parser: '@typescript-eslint/parser',
-        project: './tsconfig.json',
-      },
-    },
-    name: 'typescript-parser',
-  },
+
   {
     name: 'simple-import-sort',
     plugins: {

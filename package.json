@@ -1,17 +1,20 @@
 {
   "name": "@wisemen/eslint-config-vue",
+  "type": "module",
   "version": "0.0.4",
   "description": "Eslint config for Vue.js projects",
-  "main": "eslint.config.js",
   "author": "Wisemen",
+  "license": "ISC",
+  "main": "eslint.config.js",
   "scripts": {
     "pub:beta": "pnpm publish --no-git-checks --access public --tag beta",
     "pub:next": "pnpm publish --no-git-checks --access public --tag next",
     "pub:release": "pnpm publish --access public",
     "eslint": "eslint . --fix"
   },
-  "type": "module",
-  "license": "ISC",
+  "peerDependencies": {
+    "eslint": ">= 8.57"
+  },
   "dependencies": {
     "@antfu/eslint-config": "^2.8.0",
     "@eslint/eslintrc": "^3.0.2",
@@ -29,8 +32,5 @@
   "devDependencies": {
     "@types/eslint__eslintrc": "^2.1.1",
     "eslint": "^8.57"
-  },
-  "peerDependencies": {
-    "eslint": ">= 8.57"
   }
 }
