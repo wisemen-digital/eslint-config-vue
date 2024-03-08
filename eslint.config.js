@@ -60,7 +60,6 @@ export default antfu(
         },
       ],
       'vue/no-template-shadow': 'error',
-
       'vue/no-undef-components': ['error'],
     },
     stylistic: {

@@ -5,6 +5,7 @@
 
 Every project uses the same eslint config, so we can easily maintain the same code style.
 This also ensures that all our projects are consistent and that we don't lose time on code style.
+Uses the new Flat Config - [Read more about it](https://eslint.org/docs/latest/use/configure/configuration-files-new)
 
 ## Table of Contents
 
@@ -28,10 +29,10 @@ npm i -D @wisemen/eslint-config-vue
 
 2. Add the config to your `.eslint.config.js` file:
 ```ts
-import CoolConfig from '@wisemen/eslint-config-vue'
+import WisemenEslintConfig from '@wisemen/eslint-config-vue'
 
 export default [
-  ...(await CoolConfig),
+  ...(await WisemenEslintConfig),
   {
     settings: {
       'vue-i18n': {
