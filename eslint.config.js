@@ -24,16 +24,6 @@ export default antfu(
         { allowArrowFunctions: false },
       ],
       'import/order': 'off',
-      'max-len': [
-        'error',
-        {
-          code: 120,
-          ignoreRegExpLiterals: true,
-          ignoreStrings: true,
-          ignoreTemplateLiterals: true,
-          ignoreUrls: true,
-        },
-      ],
       'no-implicit-coercion': [
         'error',
       ],
@@ -85,6 +75,12 @@ export default antfu(
           singleline: {
             max: 1,
           },
+        },
+      ],
+      'vue/max-len': [
+        'error',
+        {
+          code: 120,
         },
       ],
       'vue/no-template-shadow': 'error',
