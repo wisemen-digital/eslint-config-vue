@@ -14,6 +14,7 @@ export default antfu(
     markdown: false,
     rules: {
       'antfu/consistent-list-newline': 'off',
+
       'curly': [
         'error',
         'all',
@@ -22,6 +23,10 @@ export default antfu(
         'error',
         'declaration',
         { allowArrowFunctions: false },
+      ],
+      'function-paren-newline': [
+        'error',
+        'multiline-arguments',
       ],
       'import/order': 'off',
       'no-implicit-coercion': [
@@ -196,7 +201,7 @@ export default antfu(
 
       'putout/add-newlines-between-types-in-union': 'error',
       'putout/array-element-newline': 'error',
-      'putout/function-declaration-paren-newline': 'error',
+      'putout/function-declaration-paren-newline': 'off',
       'putout/long-properties-destructuring': 'error',
       'putout/multiple-properties-destructuring': 'error',
       'putout/newline-function-call-arguments': 'error',
