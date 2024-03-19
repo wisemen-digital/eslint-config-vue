@@ -10,7 +10,8 @@
     "pub:beta": "pnpm publish --no-git-checks --access public --tag beta",
     "pub:next": "pnpm publish --no-git-checks --access public --tag next",
     "pub:release": "pnpm publish --access public",
-    "eslint": "eslint . --fix"
+    "eslint": "eslint . --fix",
+    "pack": "pnpm pack"
   },
   "peerDependencies": {
     "eslint": ">= 8.57"

@@ -81,6 +81,9 @@ export default antfu(
         'error',
         {
           code: 120,
+          ignoreHTMLAttributeValues: true,
+          ignoreStrings: true,
+          ignoreTemplateLiterals: true,
         },
       ],
       'vue/no-template-shadow': 'error',
@@ -181,21 +184,23 @@ export default antfu(
       ],
       'perfectionist/sort-exports': 'off',
       'perfectionist/sort-imports': 'off',
-      'perfectionist/sort-vue-attributes': 'off',
+      'perfectionist/sort-named-imports': 'off',
 
+      'perfectionist/sort-vue-attributes': 'off',
       'putout/add-newline-after-function-call': 'error',
 
       'putout/add-newline-before-function-call': 'error',
-      'putout/add-newline-before-return': 'error',
 
+      'putout/add-newline-before-return': 'error',
       'putout/add-newlines-between-specifiers': 'error',
+
       'putout/add-newlines-between-types-in-union': 'error',
       'putout/array-element-newline': 'error',
       'putout/function-declaration-paren-newline': 'error',
       'putout/long-properties-destructuring': 'error',
       'putout/multiple-properties-destructuring': 'error',
-
       'putout/newline-function-call-arguments': 'error',
+
       'putout/object-property-newline': 'error',
       'putout/objects-braces-inside-array': 'off',
       'putout/remove-empty-newline-after-last-element': 'error',
@@ -217,6 +222,7 @@ export default antfu(
           'defineEmits',
         ],
       ],
+      'sort-imports': 'off',
       'tailwindcss/no-custom-classname': [
         'error',
       ],
