@@ -5,30 +5,43 @@
 
 Every project uses the same eslint config, so we can easily maintain the same code style.
 This also ensures that all our projects are consistent and that we don't lose time on code style.
+Uses the new Flat Config - [Read more about it](https://eslint.org/docs/latest/use/configure/configuration-files-new)
 
 ## Table of Contents
 
-1. [Installation](#installation)
-2. [Important ESLint rules](#important-eslint-rules)
-3. [Want to contribute?](#want-to-contribute)
-    1. [How to contribute](#how-to-contribute)
-    2. [Rules of Pull Requests](#rules-of-pull-requests)
-    3. [Have a issue or a feature request?](#have-a-issue-or-a-feature-request)
-4. [Deployment & Publishing](#deployment--publishing)
-5. [Making changes locally](#making-changes-locally)
+- [Vue ESLint Config](#vue-eslint-config)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Important ESLint rules](#important-eslint-rules)
+  - [Want to contribute?](#want-to-contribute)
+    - [How to contribute](#how-to-contribute)
+    - [Rules of Pull Requests](#rules-of-pull-requests)
+    - [Have a issue or a feature request?](#have-a-issue-or-a-feature-request)
+  - [Deployment \& Publishing](#deployment--publishing)
+  - [Making changes locally](#making-changes-locally)
 
 ## Installation
 
 1. Install the package:
 ```bash
-npm i -D @appwise/eslint-config-vue
+npm i -D @wisemen/eslint-config-vue
 ```
 
-2. Add the config to your `.eslintrc.json` file:
-```json
-{
-  "extends": "@appwise/vue"
-}
+2. Add the config to your `.eslint.config.js` file:
+```ts
+import WisemenEslintConfig from '@wisemen/eslint-config-vue'
+
+export default [
+  ...(await WisemenEslintConfig),
+  {
+    settings: {
+      'vue-i18n': {
+        localeDir: './src/locales/*.json',
+        messageSyntaxVersion: '^9.0.0',
+      },
+    },
+  },
+]
 ```
 
 3. Add the following to your `package.json` file:
@@ -38,6 +51,11 @@ npm i -D @appwise/eslint-config-vue
     "lint": "eslint --ext .vue,.ts src --fix"
   }
 }
+```
+
+4. Enable Flatconfig in VSCode
+```json  
+"eslint.experimental.useFlatConfig": true
 ```
 
 ## Important ESLint rules
@@ -88,6 +106,6 @@ This package is automatically published to npm when a new version is pushed to t
 
 If you want to make changes to this package locally, you can use `npm link` to link the package to your project.
 
-1. Run `npm link @appwise/eslint-config-vue` in the root of your project.
+1. Run `npm link @wisemen/eslint-config-vue` in the root of your project.
 2. Run `npm run lint` to lint your project with the local version of this package.
-3. Run `npm unlink @appwise/eslint-config-vue` in the root of your project to unlink the package.
+3. Run `npm unlink @wisemen/eslint-config-vue` in the root of your project to unlink the package.
