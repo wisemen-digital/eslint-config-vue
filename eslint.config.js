@@ -1,6 +1,5 @@
 import antfu from '@antfu/eslint-config'
 import { FlatCompat } from '@eslint/eslintrc'
-import perfectionistNatural from 'eslint-plugin-perfectionist/configs/recommended-natural'
 import simpleImportSort from 'eslint-plugin-simple-import-sort'
 
 const compat = new FlatCompat()
@@ -32,7 +31,6 @@ export default antfu(
       'no-implicit-coercion': [
         'error',
       ],
-      'object-curly-newline': 'error',
       'require-await': [
         'error',
       ],
@@ -50,6 +48,7 @@ export default antfu(
           ArrayPattern: { minItems: 1, multiline: true },
         },
       ],
+      'style/object-curly-newline': 'error',
       'vue/attributes-order': [
         'error',
         {
@@ -128,7 +127,166 @@ export default antfu(
     vue: true,
     yaml: true,
   },
-  perfectionistNatural,
+  {
+    name: 'spacing',
+    rules: {
+      'style/padding-line-between-statements': [
+        'error',
+        { blankLine: 'always', next: 'return', prev: '*' },
+        { blankLine: 'always', next: 'expression', prev: '*' },
+        { blankLine: 'always', next: '*', prev: 'expression' },
+        { blankLine: 'any', next: 'expression', prev: 'expression' },
+
+        { blankLine: 'always', next: 'function', prev: '*' },
+        { blankLine: 'always', next: '*', prev: 'function' },
+        { blankLine: 'always', next: '*', prev: [
+          'const',
+          'let',
+          'var',
+        ] },
+        { blankLine: 'any', next: [
+          'const',
+          'let',
+          'var',
+        ], prev: [
+          'const',
+          'let',
+          'var',
+        ] },
+      ],
+    },
+  },
+  {
+    name: 'perfectionist-config',
+    rules: {
+      'perfectionist/sort-array-includes': [
+        'error',
+        {
+          'order': 'asc',
+          'spread-last': true,
+          'type': 'natural',
+        },
+      ],
+      'perfectionist/sort-classes': [
+        'error',
+        {
+          groups: [
+            'index-signature',
+            'static-property',
+            'private-property',
+            'property',
+            'constructor',
+            'static-method',
+            'private-method',
+            'method',
+          ],
+          order: 'asc',
+          type: 'natural',
+        },
+      ],
+      'perfectionist/sort-enums': [
+        'error',
+        {
+          order: 'asc',
+          type: 'natural',
+        },
+      ],
+      'perfectionist/sort-exports': 'off',
+      'perfectionist/sort-imports': 'off',
+
+      'perfectionist/sort-interfaces': [
+        'error',
+        {
+          'custom-groups': {
+            id: 'id',
+            booleans: '{is*,has*}',
+            date: '*At',
+            event: 'on*',
+            relations: '*Id',
+            unknown: '*',
+          },
+          'groups': [
+            'id',
+            'relations',
+            'date',
+            'booleans',
+            'unknown',
+            'event',
+            'multiline',
+          ],
+
+          'order': 'asc',
+          'type': 'natural',
+        },
+      ],
+      'perfectionist/sort-named-imports': 'off',
+      'perfectionist/sort-object-types': [
+        'error',
+        {
+          'custom-groups': {
+            id: 'id',
+            booleans: '{is*,has*}',
+            date: '*At',
+            event: 'on*',
+            relations: '*Id',
+            unknown: '*',
+          },
+          'groups': [
+            'id',
+            'relations',
+            'date',
+            'booleans',
+            'unknown',
+            'event',
+            'multiline',
+          ],
+          'order': 'asc',
+          'type': 'natural',
+        },
+      ],
+      'perfectionist/sort-objects': [
+        'error',
+        {
+          'custom-groups': {
+            id: 'id',
+            booleans: '{is*,has*}',
+            date: '*At',
+            event: 'on*',
+            relations: '*Id',
+            unknown: '*',
+          },
+          'groups': [
+            'id',
+            'relations',
+            'date',
+            'booleans',
+            'unknown',
+            'event',
+          ],
+          'order': 'asc',
+          'type': 'natural',
+        },
+      ],
+      'perfectionist/sort-union-types': [
+        'error',
+        {
+          order: 'asc',
+          type: 'natural',
+        },
+      ],
+      'perfectionist/sort-vue-attributes': 'off',
+    },
+  },
+  {
+    name: 'simple-import-sort',
+    plugins: {
+      'simple-import-sort': simpleImportSort,
+    },
+    rules: {
+      'simple-import-sort/exports': 'error',
+      'simple-import-sort/imports': 'error',
+    },
+  },
   ...compat.config({
     extends: [
       'plugin:tailwindcss/recommended',
@@ -187,18 +345,8 @@ export default antfu(
           'src/**/': 'KEBAB_CASE',
         },
       ],
-      'perfectionist/sort-exports': 'off',
-      'perfectionist/sort-imports': 'off',
-      'perfectionist/sort-named-imports': 'off',
 
-      'perfectionist/sort-vue-attributes': 'off',
-      'putout/add-newline-after-function-call': 'error',
-
-      'putout/add-newline-before-function-call': 'error',
-
-      'putout/add-newline-before-return': 'error',
       'putout/add-newlines-between-specifiers': 'error',
-
       'putout/add-newlines-between-types-in-union': 'error',
       'putout/array-element-newline': 'error',
       'putout/function-declaration-paren-newline': 'off',
@@ -235,17 +383,6 @@ export default antfu(
       'unused-imports/no-unused-imports': 'error',
     },
   }),
-
-  {
-    name: 'simple-import-sort',
-    plugins: {
-      'simple-import-sort': simpleImportSort,
-    },
-    rules: {
-      'simple-import-sort/exports': 'error',
-      'simple-import-sort/imports': 'error',
-    },
-  },
   {
     settings: {
       'vue-i18n': {
