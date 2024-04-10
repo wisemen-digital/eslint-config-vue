@@ -14,14 +14,14 @@
     "pack": "pnpm pack"
   },
   "peerDependencies": {
-    "eslint": ">= 8.57"
+    "eslint": "^9.0.0"
   },
   "dependencies": {
-    "@antfu/eslint-config": "^2.13.0",
+    "@antfu/eslint-config": "^2.13.2",
     "@eslint/eslintrc": "^3.0.2",
-    "@intlify/eslint-plugin-vue-i18n": "2.0.0",
+    "@intlify/eslint-plugin-vue-i18n": "3.0.0-next.9",
     "@typescript-eslint/parser": "^7.6.0",
-    "eslint": "^8.57",
+    "eslint": "^9.0.0",
     "eslint-plugin-check-file": "2.7.1",
     "eslint-plugin-cypress": "2.15.1",
     "eslint-plugin-perfectionist": "^2.8.0",
@@ -33,6 +33,6 @@
   },
   "devDependencies": {
     "@types/eslint__eslintrc": "^2.1.1",
-    "eslint": "^8.57"
+    "eslint": "^9.0.0"
   }
 }
