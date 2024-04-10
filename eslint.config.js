@@ -387,7 +387,7 @@ export default antfu(
     },
     settings: {
       'vue-i18n': {
-        localeDir: './locales/*.json',
+        localeDir: './src/locales/*.json',
         messageSyntaxVersion: '^9.0.0',
       },
     },
