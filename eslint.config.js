@@ -121,7 +121,7 @@ export default antfu(
       },
       parserOptions: {
         parser: '@typescript-eslint/parser',
-        project: './tsconfig.eslint.json',
+        project: './tsconfig.json',
       },
     },
     vue: true,
