@@ -304,6 +304,7 @@ export default antfu(
       'require-explicit-generics',
       'check-file',
       'putout',
+      'path',
     ],
     rules: {
       'check-file/filename-naming-convention': [
@@ -316,10 +317,17 @@ export default antfu(
           ignoreMiddleExtensions: true,
         },
       ],
+
       'check-file/folder-naming-convention': [
         'error',
         {
           'src/**/': 'KEBAB_CASE',
+        },
+      ],
+      'path/no-relative-imports': [
+        'error',
+        {
+          maxDepth: 0,
         },
       ],
 
