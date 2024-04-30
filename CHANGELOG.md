@@ -1,3 +1,6 @@
+## [0.0.15] (2024-04-30)
+- **Imports:** Require absolute imports for anything about 1 depth
+
 ## [0.0.12] (2024-04-10)
 
 ### Features
