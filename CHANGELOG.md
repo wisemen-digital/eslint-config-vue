@@ -1,3 +1,8 @@
+## [0.0.15] (2024-05-01)
+- **Refactor:** Split rules in different files
+- **Fix:** Readded return type
+
+
 ## [0.0.15] (2024-04-30)
 - **Imports:** Require absolute imports for anything about 1 depth
 
