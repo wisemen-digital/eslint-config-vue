@@ -40,11 +40,11 @@ export const perfectionistConfig = {
       'error',
       {
         'custom-groups': {
-          id: 'id',
+          id: '{id,uuid}',
           booleans: '{is*,has*}',
-          date: '*At',
+          date: '{*At,*On,*_at,*_on,*_date,*_time,*Date,*Time}',
           event: 'on*',
-          relations: '*Id',
+          relations: '{*Id,*_id,*_uuid,*_uuid}',
           unknown: '*',
         },
         'groups': [
@@ -66,11 +66,11 @@ export const perfectionistConfig = {
       'error',
       {
         'custom-groups': {
-          id: 'id',
+          id: '{id,uuid}',
           booleans: '{is*,has*}',
-          date: '*At',
+          date: '{*At,*On,*_at,*_on,*_date,*_time,*Date,*Time}',
           event: 'on*',
-          relations: '*Id',
+          relations: '{*Id,*_id,*_uuid,*_uuid}',
           unknown: '*',
         },
         'groups': [
@@ -90,11 +90,11 @@ export const perfectionistConfig = {
       'error',
       {
         'custom-groups': {
-          id: 'id',
+          id: '{id,uuid}',
           booleans: '{is*,has*}',
-          date: '*At',
+          date: '{*At,*On,*_at,*_on,*_date,*_time,*Date,*Time}',
           event: 'on*',
-          relations: '*Id',
+          relations: '{*Id,*_id,*_uuid,*_uuid}',
           unknown: '*',
         },
         'groups': [

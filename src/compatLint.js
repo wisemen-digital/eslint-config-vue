@@ -53,8 +53,7 @@ export const compatConfig = compat.config({
     'putout/function-declaration-paren-newline': 'off',
     'putout/long-properties-destructuring': 'error',
     'putout/multiple-properties-destructuring': 'error',
-    'putout/newline-function-call-arguments': 'error',
-
+    'putout/newline-function-call-arguments': 'off',
     'putout/object-property-newline': 'error',
     'putout/objects-braces-inside-array': 'off',
     'putout/remove-empty-newline-after-last-element': 'error',
