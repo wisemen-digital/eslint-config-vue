@@ -1,3 +1,30 @@
+const customGrouping = {
+  'custom-groups': {
+    id: '{id,uuid}',
+    path: 'path',
+    booleans: '{is*,has*}',
+    date: '{*At,*On,*_at,*_on,*_date,*_time,*Date,*Time}',
+    event: 'on*',
+    relations: '{*Id,*_id,*_uuid,*_uuid}',
+    unknown: '*',
+    component: 'component',
+    children: 'children',
+  },
+  'groups': [
+    'id',
+    'relations',
+    'date',
+    'booleans',
+    'path',
+    'unknown',
+    'component',
+    'children',
+    'event',
+  ],
+  'order': 'asc',
+  'type': 'natural',
+}
+
 export const perfectionistConfig = {
   name: 'perfectionist-config',
   rules: {
@@ -39,74 +66,20 @@ export const perfectionistConfig = {
     'perfectionist/sort-interfaces': [
       'error',
       {
-        'custom-groups': {
-          id: '{id,uuid}',
-          booleans: '{is*,has*}',
-          date: '{*At,*On,*_at,*_on,*_date,*_time,*Date,*Time}',
-          event: 'on*',
-          relations: '{*Id,*_id,*_uuid,*_uuid}',
-          unknown: '*',
-        },
-        'groups': [
-          'id',
-          'relations',
-          'date',
-          'booleans',
-          'unknown',
-          'event',
-          'multiline',
-        ],
-
-        'order': 'asc',
-        'type': 'natural',
+        ...customGrouping,
       },
     ],
     'perfectionist/sort-named-imports': 'off',
     'perfectionist/sort-object-types': [
       'error',
       {
-        'custom-groups': {
-          id: '{id,uuid}',
-          booleans: '{is*,has*}',
-          date: '{*At,*On,*_at,*_on,*_date,*_time,*Date,*Time}',
-          event: 'on*',
-          relations: '{*Id,*_id,*_uuid,*_uuid}',
-          unknown: '*',
-        },
-        'groups': [
-          'id',
-          'relations',
-          'date',
-          'booleans',
-          'unknown',
-          'event',
-          'multiline',
-        ],
-        'order': 'asc',
-        'type': 'natural',
+        ...customGrouping,
       },
     ],
     'perfectionist/sort-objects': [
       'error',
       {
-        'custom-groups': {
-          id: '{id,uuid}',
-          booleans: '{is*,has*}',
-          date: '{*At,*On,*_at,*_on,*_date,*_time,*Date,*Time}',
-          event: 'on*',
-          relations: '{*Id,*_id,*_uuid,*_uuid}',
-          unknown: '*',
-        },
-        'groups': [
-          'id',
-          'relations',
-          'date',
-          'booleans',
-          'unknown',
-          'event',
-        ],
-        'order': 'asc',
-        'type': 'natural',
+        ...customGrouping,
       },
     ],
     'perfectionist/sort-union-types': [
