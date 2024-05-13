@@ -19,6 +19,16 @@ export const baseConfig = {
       'error',
       'multiline-arguments',
     ],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
     'import/order': 'off',
     'no-implicit-coercion': [
       'error',
@@ -39,6 +49,10 @@ export const baseConfig = {
         ArrayExpression: 'always',
         ArrayPattern: { minItems: 1, multiline: true },
       },
+    ],
+    'style/arrow-parens': [
+      'error',
+      'always',
     ],
     'style/object-curly-newline': 'error',
     'ts/explicit-function-return-type': 'error',
