@@ -19,6 +19,11 @@ export const baseConfig = {
       'error',
       'multiline-arguments',
     ],
+    'import/extensions': [
+      'error',
+      'always',
+      { ignorePackages: true },
+    ],
     'import/order': 'off',
     'no-implicit-coercion': [
       'error',

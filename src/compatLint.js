@@ -19,7 +19,6 @@ export const compatConfig = compat.config({
   plugins: [
     'require-explicit-generics',
     'check-file',
-    'import',
     'putout',
     'path',
   ],
@@ -40,11 +39,6 @@ export const compatConfig = compat.config({
       {
         'src/**/': 'KEBAB_CASE',
       },
-    ],
-    'import/extensions': [
-      'error',
-      'always',
-      { ignorePackages: true },
     ],
     'path/no-relative-imports': [
       'error',
