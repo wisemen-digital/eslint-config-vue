@@ -16,6 +16,9 @@ export default antfu(
   i18nConfig,
   {
     settings: {
+      'import/extensions': [
+        '.ts',
+      ],
       'vue-i18n': {
         localeDir: './src/locales/*.json',
         messageSyntaxVersion: '^9.0.0',

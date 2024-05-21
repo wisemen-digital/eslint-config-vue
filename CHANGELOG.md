@@ -1,3 +1,7 @@
+## [0.0.19] (2024-05-13)
+- **Imports:** Add rule that requires file extensions in imports
+- **Parens:** Add rule that requires parens around arrow function arguments
+
 ## [0.0.17] (2024-05-01)
 - **Ordening:** Added uuid ordering and better date matching
 - **Fix:** Disabled putout rule that was causing problem's
