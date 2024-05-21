@@ -1,5 +1,5 @@
 ## [0.0.19] (2024-05-13)
-- **Imports:** Add rule that disallows file extensions in imports
+- **Imports:** Add rule that requires file extensions in imports
 - **Parens:** Add rule that requires parens around arrow function arguments
 
 ## [0.0.17] (2024-05-01)
