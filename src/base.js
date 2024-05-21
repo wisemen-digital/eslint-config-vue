@@ -19,16 +19,6 @@ export const baseConfig = {
       'error',
       'multiline-arguments',
     ],
-    'import/extensions': [
-      'error',
-      'ignorePackages',
-      {
-        js: 'never',
-        jsx: 'never',
-        ts: 'never',
-        tsx: 'never',
-      },
-    ],
     'import/order': 'off',
     'no-implicit-coercion': [
       'error',

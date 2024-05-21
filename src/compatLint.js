@@ -19,6 +19,7 @@ export const compatConfig = compat.config({
   plugins: [
     'require-explicit-generics',
     'check-file',
+    'import',
     'putout',
     'path',
   ],
@@ -40,13 +41,17 @@ export const compatConfig = compat.config({
         'src/**/': 'KEBAB_CASE',
       },
     ],
+    'import/extensions': [
+      'error',
+      'always',
+      { ignorePackages: true },
+    ],
     'path/no-relative-imports': [
       'error',
       {
         maxDepth: 0,
       },
     ],
-
     'putout/add-newlines-between-specifiers': 'error',
     'putout/add-newlines-between-types-in-union': 'error',
     'putout/array-element-newline': 'error',
