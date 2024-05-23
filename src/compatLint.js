@@ -3,9 +3,6 @@ import { FlatCompat } from '@eslint/eslintrc'
 const compat = new FlatCompat()
 
 export const compatConfig = compat.config({
-  extends: [
-    'plugin:tailwindcss/recommended',
-  ],
   overrides: [
     {
       extends: [
@@ -75,10 +72,6 @@ export const compatConfig = compat.config({
       ],
     ],
     'sort-imports': 'off',
-    'tailwindcss/no-custom-classname': [
-      'error',
-    ],
-
     'unused-imports/no-unused-imports': 'error',
   },
 })
