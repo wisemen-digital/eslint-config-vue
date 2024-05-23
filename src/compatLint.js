@@ -46,7 +46,6 @@ export const compatConfig = compat.config({
         maxDepth: 0,
       },
     ],
-
     'putout/add-newlines-between-specifiers': 'error',
     'putout/add-newlines-between-types-in-union': 'error',
     'putout/array-element-newline': 'error',
