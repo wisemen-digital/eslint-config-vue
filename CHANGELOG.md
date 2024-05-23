@@ -1,3 +1,8 @@
+## [0.1.0] (2024-05-13)
+- **Upgrade:** Upgraded to eslint 9.3 and updated dependencies.
+- **Tailwind:** Added eslint-tailwind flat config support.
+- **Chore:** Removed unused eslint-import dependency.
+
 ## [0.0.19] (2024-05-13)
 - **Imports:** Add rule that requires file extensions in imports
 - **Parens:** Add rule that requires parens around arrow function arguments
