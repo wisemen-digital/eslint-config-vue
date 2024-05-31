@@ -1,14 +1,14 @@
+## [0.1.1] (2024-06-31)
+- **Ordening:** Added ordering rules for routes declaration
+
 ## [0.1.0] (2024-05-13)
 - **Upgrade:** Upgraded to eslint 9.3 and updated dependencies.
 - **Tailwind:** Added eslint-tailwind flat config support.
 - **Chore:** Removed unused eslint-import dependency.
 
-## [0.0.19] (2024-05-13)
-- **Imports:** Add rule that requires file extensions in imports
-- **Parens:** Add rule that requires parens around arrow function arguments
-
-## [0.0.18] (2024-05-10)
-- **Ordening:** Added ordening rules for routing
+## [0.0.18] (2024-05-13)
+- **Imports:** Added rule that requires file extensions in imports
+- **Parens:** Added rule that requires parens around arrow function arguments
 
 ## [0.0.17] (2024-05-01)
 - **Ordening:** Added uuid ordering and better date matching
