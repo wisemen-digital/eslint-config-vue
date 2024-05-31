@@ -13,6 +13,8 @@ const customGrouping = {
     redirect: 'redirect',
     children: 'children',
     unknown: '*',
+    routeFirst: '{path,route}',
+    routeLast: '{children,component}',
   },
   'groups': [
     'id',
@@ -28,6 +30,8 @@ const customGrouping = {
     'redirect',
     'children',
     'unknown',
+    'routeFirst',
+    'routeLast',
   ],
   'order': 'asc',
   'type': 'natural',
