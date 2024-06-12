@@ -1,4 +1,10 @@
-## [0.1.1] (2024-06-31)
+## [0.1.2] (2024-06-12)
+- **Ordening:** Removed ordening from objects named `variants`, as it is of functional significance in style libraries like cva.
+- **Ordening:** Moved name before unknown in object ordering.
+- **Imports:** Disabled rule that requires file extensions in imports it is a doesn't work with .'s in the file name.
+
+
+## [0.1.1] (2024-05-31)
 - **Ordening:** Added ordering rules for routes declaration
 
 ## [0.1.0] (2024-05-13)
