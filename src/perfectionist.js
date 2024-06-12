@@ -2,11 +2,11 @@ const customGrouping = {
   'custom-groups': {
     id: '{id,uuid}',
     title: 'title',
+    name: 'name',
     booleans: '{is*,has*}',
     date: '{*At,*On,*_at,*_on,*_date,*_time,*Date,*Time}',
     event: 'on*',
     relations: '{*Id,*_id,*_uuid,*_uuid}',
-    name: 'name',
     path: 'path',
     component: 'component',
     meta: 'meta',
@@ -20,8 +20,8 @@ const customGrouping = {
     'date',
     'event',
     'relations',
-    'unknown',
     'name',
+    'unknown',
     'path',
     'component',
     'meta',
@@ -87,6 +87,9 @@ export const perfectionistConfig = {
       'error',
       {
         ...customGrouping,
+        'ignore-pattern': [
+          'variants',
+        ],
       },
     ],
     'perfectionist/sort-union-types': [
