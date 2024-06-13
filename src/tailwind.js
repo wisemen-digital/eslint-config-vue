@@ -6,6 +6,11 @@ export const tailwindConfig = [
     rules: {
       'tailwindcss/no-custom-classname': [
         'error',
+        {
+          whitelist: [
+            '^custom-.*',
+          ],
+        },
       ],
     },
   },

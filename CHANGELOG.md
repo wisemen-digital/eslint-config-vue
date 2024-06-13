@@ -1,3 +1,7 @@
+## [0.1.3] (2024-06-13)
+- **Tailwind:** Allow classes starting with `custom-` in tailwind.
+
+
 ## [0.1.2] (2024-06-12)
 - **Ordening:** Removed ordening from objects named `variants`, as it is of functional significance in style libraries like cva.
 - **Ordening:** Moved name before unknown in object ordering.
