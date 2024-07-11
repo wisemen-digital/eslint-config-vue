@@ -1,6 +1,8 @@
 export const baseConfig = {
   ignores: [
     '**/fixtures',
+    'dist',
+    'node_modules',
   ],
   jsonc: true,
   markdown: false,
@@ -96,31 +98,7 @@ export const baseConfig = {
     indent: 2, // 4, or 'tab'
     quotes: 'single', // or 'double'
   },
-  typescript: {
-    filesTypeAware: [
-      '**\/*.{ts,tsx,vue}',
-    ],
-    overrides: {
-      'ts/no-floating-promises': 'error',
-      'ts/strict-boolean-expressions': [
-        'error',
-        {
-          allowAny: false,
-          allowNullableBoolean: false,
-          allowNullableEnum: false,
-          allowNullableNumber: false,
-          allowNullableObject: false,
-          allowNullableString: false,
-          allowNumber: false,
-          allowString: false,
-        },
-      ],
-    },
-    parserOptions: {
-      parser: '@typescript-eslint/parser',
-      project: './tsconfig.json',
-    },
-  },
+  typescript: true,
   vue: true,
   yaml: true,
 }
