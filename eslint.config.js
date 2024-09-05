@@ -7,6 +7,7 @@ import { perfectionistConfig } from './src/perfectionist.js'
 import { simpleSortConfig } from './src/simpleSort.js'
 import { spacingConfig } from './src/spacing.js'
 import { tailwindConfig } from './src/tailwind.js'
+import { vitestConfig } from './src/vitest.js'
 
 export default antfu(
   baseConfig,
@@ -15,6 +16,7 @@ export default antfu(
   ...tailwindConfig,
   ...compatConfig,
   simpleSortConfig,
+  vitestConfig,
   i18nConfig,
   {
     settings: {
