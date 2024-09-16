@@ -1,5 +1,5 @@
 const customGrouping = {
-  'custom-groups': {
+  customGroups: {
     id: '{id,uuid}',
     title: 'title',
     name: 'name',
@@ -13,7 +13,7 @@ const customGrouping = {
     redirect: 'redirect',
     children: 'children',
   },
-  'groups': [
+  groups: [
     'id',
     'relations',
     'title',
@@ -28,8 +28,9 @@ const customGrouping = {
     'children',
     'event',
   ],
-  'order': 'asc',
-  'type': 'natural',
+  ignoreCase: false,
+  order: 'asc',
+  type: 'natural',
 }
 
 export const perfectionistConfig = {
@@ -38,9 +39,9 @@ export const perfectionistConfig = {
     'perfectionist/sort-array-includes': [
       'error',
       {
-        'order': 'asc',
-        'spread-last': true,
-        'type': 'natural',
+        groupKind: 'literals-first',
+        order: 'asc',
+        type: 'natural',
       },
     ],
     'perfectionist/sort-classes': [
@@ -87,7 +88,7 @@ export const perfectionistConfig = {
       'error',
       {
         ...customGrouping,
-        'ignore-pattern': [
+        ignorePattern: [
           'variants',
         ],
       },
@@ -95,6 +96,22 @@ export const perfectionistConfig = {
     'perfectionist/sort-union-types': [
       'error',
       {
+        groups: [
+          'conditional',
+          'function',
+          'import',
+          'intersection',
+          'keyword',
+          'literal',
+          'named',
+          'object',
+          'operator',
+          'tuple',
+          'union',
+          'nullish',
+          'unknown',
+        ],
+        ignoreCase: false,
         order: 'asc',
         type: 'natural',
       },

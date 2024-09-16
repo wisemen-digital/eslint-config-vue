@@ -1,3 +1,15 @@
+## [0.2.0] (2024-09-05)
+- **Updated packages:** Updated packages to latest versions.
+- **Ordening:** Added sorting for unions.
+- **Ordening:** Don't ignore casing for sorting. Example: A, B, a, b instead of A, a, B, b.
+- **Type rules:** Reenabled type rules.
+- **Function scoping:** Added function scoping rule.
+- **Consistent chaining:** Added consistent chaining rule.
+- **Cypress removed:** Removed cypress rules.
+- **Putout removed:** Removed unnecessary putout rules.
+- **Vitest:** Added vitest rules.
+
+
 ## [0.1.3] (2024-06-13)
 - **Tailwind:** Allow classes starting with `custom-` in tailwind.
 
