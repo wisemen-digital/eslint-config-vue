@@ -4,7 +4,12 @@ export const vitestConfig = {
     '**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts}',
   ], // or any other pattern
   rules: {
-    'test/consistent-test-filename': 'error',
+    'test/consistent-test-filename': [
+      'error',
+      {
+        pattern: '.*\\.(test|spec)\\.[tj]sx?$',
+      },
+    ],
     'test/consistent-test-it': 'error',
     'test/expect-expect': 'error',
     'test/max-nested-describe': [
