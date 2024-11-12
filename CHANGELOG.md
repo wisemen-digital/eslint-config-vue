@@ -1,3 +1,9 @@
+## [0.2.1] (2024-09-05)
+- **Type rules:** Removed type rules, it has performance issues with large projects.
+- **Packages:** Updated packages to latest versions.
+- **Consistent function scoping** Added rule to enforce consistent function scoping.
+
+
 ## [0.2.0] (2024-09-05)
 - **Updated packages:** Updated packages to latest versions.
 - **Ordening:** Added sorting for unions.

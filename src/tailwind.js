@@ -9,6 +9,7 @@ export const tailwindConfig = [
         {
           whitelist: [
             '^custom-.*',
+            '.*-variant-.*',
           ],
         },
       ],

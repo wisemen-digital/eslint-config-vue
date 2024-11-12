@@ -48,6 +48,7 @@ export const baseConfig = {
     ],
     'style/object-curly-newline': 'error',
     'ts/explicit-function-return-type': 'error',
+    'unicorn/consistent-function-scoping': 'error',
     'vue/attributes-order': [
       'error',
       {
@@ -97,31 +98,6 @@ export const baseConfig = {
   stylistic: {
     indent: 2, // 4, or 'tab'
     quotes: 'single', // or 'double'
-  },
-  typescript: {
-    filesTypeAware: [
-      '**\/*.{ts,tsx,vue}',
-    ],
-    overrides: {
-      'ts/no-floating-promises': 'error',
-      'ts/strict-boolean-expressions': [
-        'error',
-        {
-          allowAny: false,
-          allowNullableBoolean: false,
-          allowNullableEnum: false,
-          allowNullableNumber: false,
-          allowNullableObject: false,
-          allowNullableString: false,
-          allowNumber: false,
-          allowString: false,
-        },
-      ],
-    },
-    parserOptions: {
-      parser: '@typescript-eslint/parser',
-      project: './tsconfig.json',
-    },
   },
   vue: true,
   yaml: true,
