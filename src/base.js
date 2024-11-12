@@ -22,9 +22,14 @@ export const baseConfig = {
       'multiline-arguments',
     ],
     'import/order': 'off',
+    'max-depth': [
+      'error',
+      3,
+    ],
     'no-implicit-coercion': [
       'error',
     ],
+    'no-nested-ternary': 'error',
     'require-await': [
       'error',
     ],
