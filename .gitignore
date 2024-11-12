@@ -48,3 +48,9 @@ yarn-error.log*
 
 # Certificates
 *.pem
+
+# Testings
+createFiles.ts
+performance
+test.vue
+test.ts
