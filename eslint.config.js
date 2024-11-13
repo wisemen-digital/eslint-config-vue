@@ -8,6 +8,7 @@ import { simpleSortConfig } from './src/simpleSort.js'
 import { spacingConfig } from './src/spacing.js'
 import { tailwindConfig } from './src/tailwind.js'
 import { vitestConfig } from './src/vitest.js'
+import { vueConfig } from './src/vue.js'
 
 export default antfu(
   baseConfig,
@@ -15,6 +16,7 @@ export default antfu(
   perfectionistConfig,
   ...tailwindConfig,
   ...compatConfig,
+  ...vueConfig,
   simpleSortConfig,
   vitestConfig,
   i18nConfig,
@@ -28,5 +30,9 @@ export default antfu(
         messageSyntaxVersion: '^9.0.0',
       },
     },
+  },
+  {
+
+    rules: {},
   },
 )
