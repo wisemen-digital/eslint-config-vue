@@ -1,3 +1,6 @@
+## [0.2.3] (2024-11-14)
+- **Fix typescript:** Typescript to true in factory.
+
 ## [0.2.2] (2024-11-12)
 - **Max depth:** Added rule to enforce max depth of 3.
 - **No nested turnary:** Added rule to enforce no nested ternary, which I hope doesn't happen already.

@@ -104,6 +104,7 @@ export const baseConfig = {
     indent: 2, // 4, or 'tab'
     quotes: 'single', // or 'double'
   },
+  typescript: true,
   vue: true,
   yaml: true,
 }
