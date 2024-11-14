@@ -1,4 +1,9 @@
-## [0.2.1] (2024-09-05)
+## [0.2.2] (2024-11-12)
+- **Max depth:** Added rule to enforce max depth of 3.
+- **No nested turnary:** Added rule to enforce no nested ternary, which I hope doesn't happen already.
+
+
+## [0.2.1] (2024-11-12)
 - **Type rules:** Removed type rules, it has performance issues with large projects.
 - **Packages:** Updated packages to latest versions.
 - **Consistent function scoping** Added rule to enforce consistent function scoping.
