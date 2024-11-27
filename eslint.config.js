@@ -1,5 +1,6 @@
 import antfu from '@antfu/eslint-config'
 
+import { a11yConfig } from './src/a11y.js'
 import { baseConfig } from './src/base.js'
 import { compatConfig } from './src/compatLint.js'
 import { i18nConfig } from './src/i18n.js'
@@ -18,6 +19,7 @@ export default antfu(
   simpleSortConfig,
   vitestConfig,
   i18nConfig,
+  a11yConfig,
   {
     settings: {
       'import/extensions': [
