@@ -30,8 +30,8 @@ dependencies:
     specifier: 3.9.1
     version: 3.9.1(eslint@9.14.0)(typescript@5.7.2)(vue-eslint-parser@9.4.3)
   eslint-plugin-putout:
-    specifier: 23.2.0
-    version: 23.2.0(eslint@9.14.0)(putout@36.13.1)
+    specifier: 23.3.0
+    version: 23.3.0(eslint@9.14.0)(putout@36.13.1)
   eslint-plugin-require-explicit-generics:
     specifier: 1.0.0
     version: 1.0.0
@@ -3777,8 +3777,8 @@ packages:
       - typescript
     dev: false
 
-  /eslint-plugin-putout@23.2.0(eslint@9.14.0)(putout@36.13.1):
-    resolution: {integrity: sha512-uv+TkB3Dli3QzsKVkmGCX2MKnM2VF18eh2O64uxGlHUtoG4nlJ6+y0MksWDclJn648RQA5qvj+4E81NERT6bNg==}
+  /eslint-plugin-putout@23.3.0(eslint@9.14.0)(putout@36.13.1):
+    resolution: {integrity: sha512-2KHJv95oZ75YrA08Wo24jLyPN2IG1ajPb60CV3VXvtznVtM/OgpEZLSHYln7VkvAtc8jthVpUnWZftiGzKRJ/g==}
     engines: {node: '>=18'}
     peerDependencies:
       eslint: '>=8.0.0'
