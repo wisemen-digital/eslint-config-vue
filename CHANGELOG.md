@@ -1,3 +1,10 @@
+## [1.0.0] (2025-03-06)
+- **Updated packages:** Updated all packages to latest.
+- **Updated putout:** Uses flat config.
+- **Updated perfectionist:** Uses regex for pattern matching.
+- **Disabled Tailwind:** Disabled Tailwind rules, not updated to 4.0.
+- **Tests:** Added tests for spacing and perfectionist rules.
+
 ## [0.2.3] (2024-11-14)
 - **Fix typescript:** Typescript to true in factory.
 

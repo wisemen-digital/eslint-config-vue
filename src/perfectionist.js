@@ -1,18 +1,58 @@
 const customGrouping = {
-  customGroups: {
-    id: '{id,uuid}',
-    title: 'title',
-    name: 'name',
-    booleans: '{is*,has*}',
-    date: '{*At,*On,*_at,*_on,*_date,*_time,*Date,*Time}',
-    event: 'on*',
-    relations: '{*Id,*_id,*_uuid,*_uuid}',
-    path: 'path',
-    component: 'component',
-    meta: 'meta',
-    redirect: 'redirect',
-    children: 'children',
-  },
+  customGroups: [
+    {
+      elementNamePattern: '^(?:id)$',
+      groupName: 'id',
+    },
+    {
+      elementNamePattern: '^(.*Id|.*Uuid|.*_id|.*_uuid)$',
+      groupName: 'relations',
+    },
+    {
+      elementNamePattern: '^(?:title)$',
+      groupName: 'title',
+    },
+    {
+      elementNamePattern: '^(.*At|.*On|.*_at|.*_on|.*_date|.*_time|.*Date|.*Time)$',
+      groupName: 'date',
+    },
+    {
+      elementNamePattern: '^(is.*|has.*)$',
+      groupName: 'booleans',
+    },
+    {
+      elementNamePattern: '^(?:name)$',
+      groupName: 'name',
+    },
+    {
+      elementNamePattern: 'unknown',
+      groupName: 'unknown',
+    },
+    {
+      elementNamePattern: '^(?:path)$',
+      groupName: 'path',
+    },
+    {
+      elementNamePattern: '^(?:component)$',
+      groupName: 'component',
+    },
+    {
+      elementNamePattern: '^(?:meta)$',
+      groupName: 'meta',
+    },
+    {
+      elementNamePattern: '^(?:redirect)$',
+      groupName: 'redirect',
+    },
+    {
+      elementNamePattern: '^(?:children)$',
+      groupName: 'children',
+    },
+    {
+      elementNamePattern: '^on.*$',
+      groupName: 'event',
+    },
+  ],
   groups: [
     'id',
     'relations',
@@ -28,6 +68,7 @@ const customGrouping = {
     'children',
     'event',
   ],
+
   ignoreCase: false,
   order: 'asc',
   type: 'natural',
@@ -36,14 +77,6 @@ const customGrouping = {
 export const perfectionistConfig = {
   name: 'perfectionist-config',
   rules: {
-    'perfectionist/sort-array-includes': [
-      'error',
-      {
-        groupKind: 'literals-first',
-        order: 'asc',
-        type: 'natural',
-      },
-    ],
     'perfectionist/sort-classes': [
       'error',
       {
