@@ -4,6 +4,49 @@
 - **Updated perfectionist:** Uses regex for pattern matching.
 - **Disabled Tailwind:** Disabled Tailwind rules, not updated to 4.0.
 - **Tests:** Added tests for spacing and perfectionist rules.
+- **Unicorn:** Added unicorn rules.
+  - * catch-error-name
+    * consistent-destructuring
+    * consistent-empty-array-spread
+    * consistent-existence-index-check
+    * error-message
+    * expiring-todo-comments
+    * explicit-length-check
+    * no-accessor-recursion
+    * no-anonymous-default-export
+    * no-array-for-each
+    * no-array-method-this-argument
+    * no-array-push-push
+    * no-await-expression-member
+    * no-await-in-promise-methods
+    * no-empty-file
+    * no-for-loop
+    * no-nested-ternary
+    * no-single-promise-in-promise-methods
+    * no-unnecessary-await
+    * no-unreadable-array-destructuring
+    * no-useless-fallback-in-spread
+    * no-useless-length-check
+    * no-useless-switch-case
+    * no-useless-undefined
+    * number-literal-case
+    * numeric-separators-style
+    * prefer-array-find
+    * prefer-array-flat
+    * prefer-array-flat-map
+    * prefer-array-index-of
+    * prefer-array-some
+    * prefer-at
+    * prefer-date-now
+    * prefer-includes
+    * prefer-logical-operator-over-ternary
+    * prefer-math-min-max
+    * prefer-set-has
+    * prefer-set-size
+    * prefer-switch
+    * template-indent
+    * throw-new-error
+
 
 ## [0.2.3] (2024-11-14)
 - **Fix typescript:** Typescript to true in factory.
