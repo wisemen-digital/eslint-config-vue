@@ -8,6 +8,7 @@ import { perfectionistConfig } from './src/perfectionist.js'
 import { putoutConfig } from './src/putout.js'
 import { simpleSortConfig } from './src/simpleSort.js'
 import { spacingConfig } from './src/spacing.js'
+import { tailwindConfig } from './src/tailwind.js'
 import { unicornConfig } from './src/unicorn.js'
 import { vitestConfig } from './src/vitest.js'
 
@@ -22,6 +23,7 @@ export default antfu(
   simpleSortConfig,
   vitestConfig,
   i18nConfig,
+  tailwindConfig,
   {
     settings: {
       'import/extensions': [

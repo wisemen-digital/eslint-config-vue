@@ -1,3 +1,8 @@
+
+## [1.1.0] (2025-03-26)
+- **Readable tailwind:** Added readable tailwind rules.
+
+
 ## [1.0.0] (2025-03-26)
 - **Updated packages:** Updated all packages to latest.
 - **A11y rules:** Added a11y rules.
