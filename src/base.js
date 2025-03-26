@@ -1,4 +1,5 @@
 export const baseConfig = {
+  isInEditor: false,
   ignores: [
     '**/fixtures',
     'dist',
