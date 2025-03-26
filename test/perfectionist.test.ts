@@ -45,6 +45,7 @@ describe('perfectionist plugin sorts correctly', () => {
   it('sorts interfaces', () => {
     interface _TestInterface {
       id: number
+      uuid: string
       testId: number
       title: string
       testedAt: Date
@@ -67,6 +68,7 @@ describe('perfectionist plugin sorts correctly', () => {
   it('sorts types', () => {
     interface _TestType {
       id: number
+      uuid: string
       testId: number
       title: string
       testedAt: Date
@@ -89,6 +91,7 @@ describe('perfectionist plugin sorts correctly', () => {
   it('sorts objects', () => {
     const _TestObject = {
       id: 1,
+      uuid: 3,
       testId: 2,
       title: 'title',
       testedAt: new Date(),

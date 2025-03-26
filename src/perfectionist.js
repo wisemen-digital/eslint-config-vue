@@ -1,7 +1,7 @@
 const customGrouping = {
   customGroups: [
     {
-      elementNamePattern: '^(?:id)$',
+      elementNamePattern: '^(?:id)$|^(?:uuid.*)$',
       groupName: 'id',
     },
     {
