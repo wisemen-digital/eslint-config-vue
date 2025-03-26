@@ -1,4 +1,8 @@
-## [1.0.0] (2025-03-06)
+## [1.0.0] (2025-03-26)
+- **Updated packages:** Updated all packages to latest.
+- **A11y rules:** Added a11y rules.
+
+## [1.0.0-next.1] (2025-03-06)
 - **Updated packages:** Updated all packages to latest.
 - **Updated putout:** Uses flat config.
 - **Updated perfectionist:** Uses regex for pattern matching.
