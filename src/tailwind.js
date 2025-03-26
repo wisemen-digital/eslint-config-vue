@@ -1,18 +1,12 @@
-import tailwind from 'eslint-plugin-tailwindcss'
+import eslintPluginReadableTailwind from 'eslint-plugin-readable-tailwind'
 
 export const tailwindConfig = [
-  ...tailwind.configs['flat/recommended'],
   {
+    plugins: {
+      'readable-tailwind': eslintPluginReadableTailwind,
+    },
     rules: {
-      'tailwindcss/no-custom-classname': [
-        'error',
-        {
-          whitelist: [
-            '^custom-.*',
-            '.*-variant-.*',
-          ],
-        },
-      ],
+      ...eslintPluginReadableTailwind.configs.error.rules,
     },
   },
 ]
