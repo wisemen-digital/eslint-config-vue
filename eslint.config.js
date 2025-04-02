@@ -5,7 +5,6 @@ import { baseConfig } from './src/base.js'
 import { compatConfig } from './src/compatLint.js'
 import { i18nConfig } from './src/i18n.js'
 import { perfectionistConfig } from './src/perfectionist.js'
-import { putoutConfig } from './src/putout.js'
 import { simpleSortConfig } from './src/simpleSort.js'
 import { spacingConfig } from './src/spacing.js'
 import { tailwindConfig } from './src/tailwind.js'
@@ -16,7 +15,6 @@ export default antfu(
   baseConfig,
   spacingConfig,
   perfectionistConfig,
-  putoutConfig,
   unicornConfig,
   a11yConfig,
   ...compatConfig,

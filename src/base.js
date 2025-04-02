@@ -16,7 +16,9 @@ export const baseConfig = {
     'func-style': [
       'error',
       'declaration',
-      { allowArrowFunctions: false },
+      {
+        allowArrowFunctions: false,
+      },
     ],
     'function-paren-newline': [
       'error',
@@ -45,14 +47,41 @@ export const baseConfig = {
       'error',
       {
         ArrayExpression: 'always',
-        ArrayPattern: { minItems: 1, multiline: true },
+        ArrayPattern: {
+          minItems: 0,
+          multiline: true,
+        },
       },
     ],
     'style/arrow-parens': [
       'error',
       'always',
     ],
-    'style/object-curly-newline': 'error',
+
+    'style/object-curly-newline': [
+      'error',
+      {
+        ExportDeclaration: {
+          minProperties: 2,
+          multiline: true,
+        },
+        ImportDeclaration: {
+          minProperties: 2,
+          multiline: true,
+        },
+        ObjectExpression: {
+          minProperties: 1,
+          multiline: true,
+        },
+        ObjectPattern: {
+          minProperties: 1,
+          multiline: true,
+        },
+      },
+    ],
+    'style/object-property-newline': [
+      'error',
+    ],
     'ts/explicit-function-return-type': 'error',
     'unicorn/consistent-function-scoping': 'error',
     'vue/attributes-order': [
