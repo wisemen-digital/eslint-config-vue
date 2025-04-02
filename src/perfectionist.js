@@ -106,16 +106,12 @@ export const perfectionistConfig = {
 
     'perfectionist/sort-interfaces': [
       'error',
-      {
-        ...customGrouping,
-      },
+      { ...customGrouping },
     ],
     'perfectionist/sort-named-imports': 'off',
     'perfectionist/sort-object-types': [
       'error',
-      {
-        ...customGrouping,
-      },
+      { ...customGrouping },
     ],
     'perfectionist/sort-objects': [
       'error',

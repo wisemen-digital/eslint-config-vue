@@ -16,9 +16,7 @@ export const baseConfig = {
     'func-style': [
       'error',
       'declaration',
-      {
-        allowArrowFunctions: false,
-      },
+      { allowArrowFunctions: false },
     ],
     'function-paren-newline': [
       'error',
@@ -70,11 +68,11 @@ export const baseConfig = {
           multiline: true,
         },
         ObjectExpression: {
-          minProperties: 1,
+          minProperties: 2,
           multiline: true,
         },
         ObjectPattern: {
-          minProperties: 1,
+          minProperties: 2,
           multiline: true,
         },
       },
@@ -108,12 +106,8 @@ export const baseConfig = {
     'vue/max-attributes-per-line': [
       'error',
       {
-        multiline: {
-          max: 1,
-        },
-        singleline: {
-          max: 1,
-        },
+        multiline: { max: 1 },
+        singleline: { max: 1 },
       },
     ],
     'vue/max-len': [

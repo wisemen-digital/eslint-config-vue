@@ -1,4 +1,5 @@
 import antfu from '@antfu/eslint-config'
+import globals from 'globals'
 
 import { a11yConfig } from './src/a11y.js'
 import { baseConfig } from './src/base.js'
@@ -21,16 +22,27 @@ export default antfu(
   simpleSortConfig,
   vitestConfig,
   i18nConfig,
+
   tailwindConfig,
   {
     settings: {
       'import/extensions': [
         '.ts',
+
       ],
       'vue-i18n': {
         localeDir: './src/locales/*.json',
         messageSyntaxVersion: '^9.0.0',
       },
+    },
+
+  },
+  {
+
+    languageOptions: {
+      ecmaVersion: 'latest',
+      globals: { ...globals.browser },
+      sourceType: 'module',
     },
   },
 )
