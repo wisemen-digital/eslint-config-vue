@@ -7,7 +7,7 @@ export const baseConfig = {
     'node_modules',
   ],
   jsonc: true,
-  markdown: true,
+  markdown: false,
   rules: {
     'antfu/consistent-list-newline': 'off',
     'curly': [

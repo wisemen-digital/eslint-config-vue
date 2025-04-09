@@ -1,4 +1,9 @@
 
+## [1.2.0] (2025-04-09)
+- **Rules:** Removed all putout rules and refactored them to different ones.
+- **Formatting** Formatting for CSS files.
+
+
 ## [1.1.0] (2025-03-26)
 - **Readable tailwind:** Added readable tailwind rules.
 
