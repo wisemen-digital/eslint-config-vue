@@ -1,12 +1,13 @@
 export const baseConfig = {
   isInEditor: false,
+  css: true,
   ignores: [
     '**/fixtures',
     'dist',
     'node_modules',
   ],
   jsonc: true,
-  markdown: false,
+  markdown: true,
   rules: {
     'antfu/consistent-list-newline': 'off',
     'curly': [
