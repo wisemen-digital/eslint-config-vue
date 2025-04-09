@@ -1,6 +1,13 @@
 export const baseConfig = {
   isInEditor: false,
-  css: true,
+  formatters: {
+    /**
+     * Format CSS, LESS, SCSS files, also the `<style>` blocks in Vue
+     * By default uses Prettier
+     */
+    css: true,
+    markdown: false,
+  },
   ignores: [
     '**/fixtures',
     'dist',
