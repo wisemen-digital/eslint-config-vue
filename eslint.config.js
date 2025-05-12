@@ -28,7 +28,6 @@ export default antfu(
     settings: {
       'import/extensions': [
         '.ts',
-
       ],
       'vue-i18n': {
         localeDir: './src/locales/*.json',
