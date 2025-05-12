@@ -102,7 +102,9 @@ describe('perfectionist plugin sorts correctly', () => {
       test2: 4,
       path: 'path',
       component: 'component',
-      meta: { meta: 'meta' },
+      meta: {
+        meta: 'meta',
+      },
       redirect: 'redirect',
       children: [
         'children',

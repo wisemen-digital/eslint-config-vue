@@ -40,7 +40,9 @@ export default antfu(
 
     languageOptions: {
       ecmaVersion: 'latest',
-      globals: { ...globals.browser },
+      globals: {
+        ...globals.browser,
+      },
       sourceType: 'module',
     },
   },

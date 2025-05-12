@@ -2,7 +2,9 @@ import vueI18n from '@intlify/eslint-plugin-vue-i18n'
 
 export const i18nConfig = {
   name: 'vue-i18n',
-  plugins: { '@intlify/vue-i18n': vueI18n },
+  plugins: {
+    '@intlify/vue-i18n': vueI18n,
+  },
   rules: {
     '@intlify/vue-i18n/key-format-style': [
       'error',
