@@ -28,7 +28,6 @@ export default antfu(
     settings: {
       'import/extensions': [
         '.ts',
-
       ],
       'vue-i18n': {
         localeDir: './src/locales/*.json',
@@ -41,7 +40,9 @@ export default antfu(
 
     languageOptions: {
       ecmaVersion: 'latest',
-      globals: { ...globals.browser },
+      globals: {
+        ...globals.browser,
+      },
       sourceType: 'module',
     },
   },

@@ -6,13 +6,17 @@ export const vitestConfig = {
   rules: {
     'test/consistent-test-filename': [
       'error',
-      { pattern: '.*\\.(test|spec)\\.[tj]sx?$' },
+      {
+        pattern: '.*\\.(test|spec)\\.[tj]sx?$',
+      },
     ],
     'test/consistent-test-it': 'error',
     'test/expect-expect': 'error',
     'test/max-nested-describe': [
       'error',
-      { max: 3 },
+      {
+        max: 3,
+      },
     ],
     'test/no-alias-methods': 'error',
     'test/no-commented-out-tests': 'error',

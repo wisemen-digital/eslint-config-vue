@@ -17,21 +17,29 @@ export const compatConfig = compat.config({
         '**/*.{js,ts}': 'CAMEL_CASE',
         '**/*.{vue}': 'PASCAL_CASE',
       },
-      { ignoreMiddleExtensions: true },
+      {
+        ignoreMiddleExtensions: true,
+      },
     ],
     'check-file/folder-naming-convention': [
       'error',
-      { 'src/**/': 'KEBAB_CASE' },
+      {
+        'src/**/': 'KEBAB_CASE',
+      },
     ],
     'import-newlines/enforce': [
       'error',
-      { items: 1 },
+      {
+        items: 1,
+      },
     ],
 
     'newline-destructuring/newline': 'error',
     'path/no-relative-imports': [
       'error',
-      { maxDepth: 0 },
+      {
+        maxDepth: 0,
+      },
     ],
     'require-explicit-generics/require-explicit-generics': [
       'error',
