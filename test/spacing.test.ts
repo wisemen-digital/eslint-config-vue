@@ -6,7 +6,7 @@ import {
 } from 'vitest'
 
 describe('spacing plugin adds correct spacing', () => {
-  it('adds correct spacing between function and vars', () => {
+  it('adds correct spacing between function ]and vars', () => {
     function _test(): void {}
 
     const _test2 = 1

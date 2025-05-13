@@ -7,6 +7,8 @@ export const compatConfig = compat.config({
     'require-explicit-generics',
     'check-file',
     'path',
+    'newline-destructuring',
+    'import-newlines',
   ],
   rules: {
     'check-file/filename-naming-convention': [
@@ -19,13 +21,20 @@ export const compatConfig = compat.config({
         ignoreMiddleExtensions: true,
       },
     ],
-
     'check-file/folder-naming-convention': [
       'error',
       {
         'src/**/': 'KEBAB_CASE',
       },
     ],
+    'import-newlines/enforce': [
+      'error',
+      {
+        items: 1,
+      },
+    ],
+
+    'newline-destructuring/newline': 'error',
     'path/no-relative-imports': [
       'error',
       {
