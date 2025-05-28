@@ -1,3 +1,5 @@
+## [1.4.0] (2025-05-28) 
+- **Tailwindcss:** Updated to eslint-plugin-better-tailwind, enabling conficted classes and unregistered classes rules.
 
 ## [1.2.0] (2025-04-09)
 - **Rules:** Removed all putout rules and refactored them to different ones.
