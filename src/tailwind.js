@@ -1,12 +1,17 @@
-import eslintPluginReadableTailwind from 'eslint-plugin-readable-tailwind'
+import eslintPluginBetterTailwindcss from 'eslint-plugin-better-tailwindcss'
 
 export const tailwindConfig = [
   {
     plugins: {
-      'readable-tailwind': eslintPluginReadableTailwind,
+      'better-tailwindcss': eslintPluginBetterTailwindcss,
     },
     rules: {
-      ...eslintPluginReadableTailwind.configs.error.rules,
+      ...eslintPluginBetterTailwindcss.configs['recommended-error'].rules,
+    },
+    settings: {
+      'better-tailwindcss': {
+        entryPoint: 'src/assets/styles/index.css',
+      },
     },
   },
 ]
