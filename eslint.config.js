@@ -22,7 +22,6 @@ export default antfu(
   simpleSortConfig,
   vitestConfig,
   i18nConfig,
-
   tailwindConfig,
   {
     settings: {

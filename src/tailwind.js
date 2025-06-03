@@ -7,6 +7,12 @@ export const tailwindConfig = [
     },
     rules: {
       ...eslintPluginBetterTailwindcss.configs['recommended-error'].rules,
+      'better-tailwindcss/enforce-consistent-variable-syntax': [
+        'error',
+        {
+          syntax: 'parentheses',
+        },
+      ],
     },
     settings: {
       'better-tailwindcss': {
