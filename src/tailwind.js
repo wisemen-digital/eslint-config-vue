@@ -13,6 +13,17 @@ export const tailwindConfig = [
           syntax: 'parentheses',
         },
       ],
+      'better-tailwindcss/no-unregistered-classes': [
+        'error',
+        {
+          ignore: [
+            '^group(?:\\/(\\S*))?$',
+            '^peer(?:\\/(\\S*))?$',
+            // anything starting with custon- should be ignored
+            '^custom-(?:\\S+)?$',
+          ],
+        },
+      ],
     },
     settings: {
       'better-tailwindcss': {
