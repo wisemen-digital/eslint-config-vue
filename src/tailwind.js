@@ -7,6 +7,23 @@ export const tailwindConfig = [
     },
     rules: {
       ...eslintPluginBetterTailwindcss.configs['recommended-error'].rules,
+      'better-tailwindcss/enforce-consistent-variable-syntax': [
+        'error',
+        {
+          syntax: 'parentheses',
+        },
+      ],
+      'better-tailwindcss/no-unregistered-classes': [
+        'error',
+        {
+          ignore: [
+            '^group(?:\\/(\\S*))?$',
+            '^peer(?:\\/(\\S*))?$',
+            // anything starting with custon- should be ignored
+            '^custom-(?:\\S+)?$',
+          ],
+        },
+      ],
     },
     settings: {
       'better-tailwindcss': {
