@@ -1,0 +1,34 @@
+[
+  {
+    "filename": "/Users/robbe/work/packages/eslint-config-vue/src/compatLint.js",
+    "errorMessage": "🔥 File 'compatLint.js' is invalid. 🔥\n\nAccording to the structure, the 'src' folder can only contain folders.\nError location = ./src/compatLint.js\n\n"
+  },
+  {
+    "filename": "/Users/robbe/work/packages/eslint-config-vue/src/eslintConfig.js",
+    "errorMessage": "🔥 File 'eslintConfig.js' is invalid. 🔥\n\nAccording to the structure, the 'src' folder can only contain folders.\nError location = ./src/eslintConfig.js\n\n"
+  },
+  {
+    "filename": "/Users/robbe/work/packages/eslint-config-vue/src/base.js",
+    "errorMessage": "🔥 File 'base.js' is invalid. 🔥\n\nAccording to the structure, the 'src' folder can only contain folders.\nError location = ./src/base.js\n\n"
+  },
+  {
+    "filename": "/Users/robbe/work/packages/eslint-config-vue/src/tailwind.js",
+    "errorMessage": "🔥 File 'tailwind.js' is invalid. 🔥\n\nAccording to the structure, the 'src' folder can only contain folders.\nError location = ./src/tailwind.js\n\n"
+  },
+  {
+    "filename": "/Users/robbe/work/packages/eslint-config-vue/src/spacing.js",
+    "errorMessage": "🔥 File 'spacing.js' is invalid. 🔥\n\nAccording to the structure, the 'src' folder can only contain folders.\nError location = ./src/spacing.js\n\n"
+  },
+  {
+    "filename": "/Users/robbe/work/packages/eslint-config-vue/src/simpleSort.js",
+    "errorMessage": "🔥 File 'simpleSort.js' is invalid. 🔥\n\nAccording to the structure, the 'src' folder can only contain folders.\nError location = ./src/simpleSort.js\n\n"
+  },
+  {
+    "filename": "/Users/robbe/work/packages/eslint-config-vue/src/structure.js",
+    "errorMessage": "🔥 File 'structure.js' is invalid. 🔥\n\nAccording to the structure, the 'src' folder can only contain folders.\nError location = ./src/structure.js\n\n"
+  },
+  {
+    "filename": "/Users/robbe/work/packages/eslint-config-vue/src/unicorn.js",
+    "errorMessage": "🔥 File 'unicorn.js' is invalid. 🔥\n\nAccording to the structure, the 'src' folder can only contain folders.\nError location = ./src/unicorn.js\n\n"
+  }
+]

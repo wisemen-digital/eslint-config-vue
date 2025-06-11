@@ -5,7 +5,7 @@
   "description": "Eslint config for Vue.js projects",
   "author": "Wisemen",
   "license": "ISC",
-  "main": "eslint.config.js",
+  "main": "./src/eslintConfig.js",
   "scripts": {
     "pub:beta": "pnpm publish --no-git-checks --access public --tag beta",
     "pub:next": "pnpm publish --no-git-checks --access public --tag next",
@@ -33,6 +33,7 @@
     "eslint-plugin-newline-destructuring": "^1.2.2",
     "eslint-plugin-path": "2.0.3",
     "eslint-plugin-perfectionist": "4.13.0",
+    "eslint-plugin-project-structure": "^3.13.3",
     "eslint-plugin-readable-tailwind": "^2.0.0",
     "eslint-plugin-require-explicit-generics": "1.0.0",
     "eslint-plugin-simple-import-sort": "12.1.1",
