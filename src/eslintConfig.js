@@ -6,6 +6,7 @@ import { baseConfig } from './base.js'
 import { compatConfig } from './compatLint.js'
 import { i18nConfig } from './i18n.js'
 import { modulesConfig } from './modules.js'
+import { pathConfig } from './path.js'
 import { perfectionistConfig } from './perfectionist.js'
 import { simpleSortConfig } from './simpleSort.js'
 import { spacingConfig } from './spacing.js'
@@ -26,6 +27,7 @@ export default antfu(
   i18nConfig,
   tailwindConfig,
   modulesConfig,
+  pathConfig,
   {
     settings: {
       'import/extensions': [
@@ -36,7 +38,6 @@ export default antfu(
         messageSyntaxVersion: '^9.0.0',
       },
     },
-
   },
   {
 

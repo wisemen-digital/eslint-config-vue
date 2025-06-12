@@ -407,6 +407,9 @@ export const folderStructureConfig = createFolderStructure({
                 VIEWS_FOLDER,
                 DIALOGS_FOLDER,
                 {
+                  name: 'index.ts',
+                },
+                {
                   name: '*',
                   children: [],
                 },

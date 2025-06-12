@@ -6,6 +6,7 @@ import { baseConfig } from './src/base.js'
 import { compatConfig } from './src/compatLint.js'
 import { i18nConfig } from './src/i18n.js'
 import { modulesConfig } from './src/modules.js'
+import { pathConfig } from './src/path.js'
 import { perfectionistConfig } from './src/perfectionist.js'
 import { simpleSortConfig } from './src/simpleSort.js'
 import { spacingConfig } from './src/spacing.js'
@@ -25,7 +26,7 @@ export default antfu(
   i18nConfig,
   tailwindConfig,
   modulesConfig,
-
+  pathConfig,
   {
     settings: {
       'import/extensions': [

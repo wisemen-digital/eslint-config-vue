@@ -9,16 +9,16 @@ export const independentModulesConfig = createIndependentModules({
     {
       name: 'Root folder',
       allowImportsFrom: [
+
         'src/modules/*/index.ts',
         '!src/modules/**/*',
+        'virtual:pwa-register/vue',
       ],
       errorMessage:
         '🔥 The `root` folder cannot import items from the `modules` folder. 🔥',
       pattern: [
         [
           '!src/modules/**/*',
-          '!src/routes/**/*',
-          '!src/types/queryKey.type.ts',
         ],
 
       ],
@@ -40,6 +40,10 @@ export const independentModulesConfig = createIndependentModules({
         [
           'src/modules/*/index.ts',
         ],
+        [
+          'virtual:pwa-register/vue',
+
+        ],
       ],
       errorMessage:
         '🔥 Everything in the features folder is encapsulated, you cannot import from outside the folder. 🔥',
@@ -48,7 +52,9 @@ export const independentModulesConfig = createIndependentModules({
     {
       name: 'Modules',
       allowImportsFrom: [
-
+        [
+          'virtual:pwa-register/vue',
+        ],
         [
           'src/**/*',
           '!src/modules/**/*',
@@ -59,7 +65,6 @@ export const independentModulesConfig = createIndependentModules({
         [
           'src/modules/*/index.ts',
         ],
-
       ],
       errorMessage:
         '🔥 Everything in the modules folder is encapsulated, you cannot import from outside the folder. 🔥',
@@ -68,14 +73,6 @@ export const independentModulesConfig = createIndependentModules({
       ],
     },
   ],
-  pathAliases: {
-    baseUrl: '.',
-    paths: {
-      '@/*': [
-        './src/*',
-      ],
-    },
-  },
 })
 
 export const modulesConfig = {

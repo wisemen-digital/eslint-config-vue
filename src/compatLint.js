@@ -6,10 +6,10 @@ export const compatConfig = compat.config({
   plugins: [
     'require-explicit-generics',
     'check-file',
-    'path',
     'newline-destructuring',
     'import-newlines',
   ],
+
   rules: {
     'check-file/filename-naming-convention': [
       'error',
@@ -33,14 +33,7 @@ export const compatConfig = compat.config({
         items: 1,
       },
     ],
-
     'newline-destructuring/newline': 'error',
-    'path/no-relative-imports': [
-      'error',
-      {
-        maxDepth: 0,
-      },
-    ],
     'require-explicit-generics/require-explicit-generics': [
       'error',
       [
