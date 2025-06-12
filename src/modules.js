@@ -9,28 +9,54 @@ export const independentModulesConfig = createIndependentModules({
     {
       name: 'Root folder',
       allowImportsFrom: [
+        'src/modules/*/index.ts',
         '!src/modules/**/*',
       ],
       errorMessage:
         '🔥 The `root` folder cannot import items from the `modules` folder. 🔥',
-      pattern: '!src/modules/**/*',
+      pattern: [
+        [
+          '!src/modules/**/*',
+          '!src/routes/**/*',
+          '!src/types/queryKey.type.ts',
+        ],
+
+      ],
     },
+
     {
       name: 'Features',
       allowImportsFrom: [
-        '{family_5}/**/*',
+        [
+          'src/**/*',
+          '!src/modules/**/*',
+        ],
+        [
+          '!src/modules/**/*/features/**/*',
+        ],
+        [
+          '{family_5}/**/*',
+        ],
       ],
       errorMessage:
-        '🔥 Files inside a feature (src/modules/<module>/features/<feature>)  cannot import anything outside their feature. 🔥',
+        '🔥 Everything in the features folder is encapsulated, you cannot import from outside the folder. 🔥',
       pattern: 'src/modules/*/features/**/*',
     },
     {
       name: 'Modules',
       allowImportsFrom: [
-        '{family_3}/**/*',
+
+        [
+          'src/**/*',
+          '!src/modules/**/*',
+        ],
+        [
+          '{family_3}/**/*',
+        ],
+
       ],
       errorMessage:
-        '🔥 Files inside a module (src/modules/<module>/) cannot import anything outside their module. 🔥',
+        '🔥 Everything in the modules folder is encapsulated, you cannot import from outside the folder. 🔥',
       pattern: [
         'src/modules/**/*',
       ],
