@@ -37,6 +37,9 @@ export const independentModulesConfig = createIndependentModules({
         [
           '{family_5}/**/*',
         ],
+        [
+          'src/modules/*/index.ts',
+        ],
       ],
       errorMessage:
         '🔥 Everything in the features folder is encapsulated, you cannot import from outside the folder. 🔥',
@@ -52,6 +55,9 @@ export const independentModulesConfig = createIndependentModules({
         ],
         [
           '{family_3}/**/*',
+        ],
+        [
+          'src/modules/*/index.ts',
         ],
 
       ],
