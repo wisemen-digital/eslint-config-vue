@@ -9,8 +9,8 @@ export const independentModulesConfig = createIndependentModules({
     {
       name: 'Root folder',
       allowImportsFrom: [
-
         'src/modules/*/index.ts',
+        'src/modules/*/components.ts',
         '!src/modules/**/*',
         'virtual:pwa-register/vue',
       ],
@@ -41,6 +41,9 @@ export const independentModulesConfig = createIndependentModules({
           'src/modules/*/index.ts',
         ],
         [
+          'src/modules/*/components.ts',
+        ],
+        [
           'virtual:pwa-register/vue',
 
         ],
@@ -64,6 +67,9 @@ export const independentModulesConfig = createIndependentModules({
         ],
         [
           'src/modules/*/index.ts',
+        ],
+        [
+          'src/modules/*/components.ts',
         ],
       ],
       errorMessage:
