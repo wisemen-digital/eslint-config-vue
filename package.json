@@ -1,11 +1,11 @@
 {
   "name": "@wisemen/eslint-config-vue",
   "type": "module",
-  "version": "1.5.1",
+  "version": "1.6.0-beta.2",
   "description": "Eslint config for Vue.js projects",
   "author": "Wisemen",
   "license": "ISC",
-  "main": "eslint.config.js",
+  "main": "./src/eslintConfig.js",
   "scripts": {
     "pub:beta": "pnpm publish --no-git-checks --access public --tag beta",
     "pub:next": "pnpm publish --no-git-checks --access public --tag next",
@@ -20,19 +20,20 @@
     "eslint": "^9.23.0"
   },
   "dependencies": {
-    "@antfu/eslint-config": "4.13.2",
+    "@antfu/eslint-config": "4.14.1",
     "@eslint/eslintrc": "3.3.1",
     "@intlify/eslint-plugin-vue-i18n": "4.0.1",
-    "@typescript-eslint/parser": "^8.33.1",
-    "@vitest/eslint-plugin": "^1.2.1",
+    "@typescript-eslint/parser": "^8.34.0",
+    "@vitest/eslint-plugin": "^1.2.2",
     "eslint": "9.28.0",
     "eslint-plugin-better-tailwindcss": "^3.1.0",
-    "eslint-plugin-check-file": "3.2.0",
+    "eslint-plugin-check-file": "3.3.0",
     "eslint-plugin-format": "^1.0.1",
     "eslint-plugin-import-newlines": "^1.4.0",
     "eslint-plugin-newline-destructuring": "^1.2.2",
     "eslint-plugin-path": "2.0.3",
-    "eslint-plugin-perfectionist": "4.13.0",
+    "eslint-plugin-perfectionist": "4.14.0",
+    "eslint-plugin-project-structure": "^3.13.3",
     "eslint-plugin-readable-tailwind": "^2.0.0",
     "eslint-plugin-require-explicit-generics": "1.0.0",
     "eslint-plugin-simple-import-sort": "12.1.1",
@@ -42,9 +43,9 @@
     "globals": "^16.2.0"
   },
   "devDependencies": {
-    "tailwindcss": "^4.1.8",
+    "tailwindcss": "^4.1.10",
     "ts-node": "10.9.2",
-    "tsx": "^4.19.4",
-    "vitest": "^3.2.0"
+    "tsx": "^4.20.2",
+    "vitest": "^3.2.3"
   }
 }

@@ -1,3 +1,8 @@
+## [1.6.0] (2025-06-12)
+- **Project structure:** Enforced project structure.
+- **Module encapsulation:** Enforced module encapsulation.
+- **Path**: Updated path rules package to flat config.
+
 ## [1.5.1] (2025-06-05) 
 - **Tailwindcss:** enforce-consistent-variable-syntax rule ignores classes with custom-.
 

@@ -1,18 +1,19 @@
 import antfu from '@antfu/eslint-config'
 import globals from 'globals'
 
-import { a11yConfig } from './src/a11y.js'
-import { baseConfig } from './src/base.js'
-import { compatConfig } from './src/compatLint.js'
-import { i18nConfig } from './src/i18n.js'
-import { modulesConfig } from './src/modules.js'
-import { pathConfig } from './src/path.js'
-import { perfectionistConfig } from './src/perfectionist.js'
-import { simpleSortConfig } from './src/simpleSort.js'
-import { spacingConfig } from './src/spacing.js'
-import { tailwindConfig } from './src/tailwind.js'
-import { unicornConfig } from './src/unicorn.js'
-import { vitestConfig } from './src/vitest.js'
+import { a11yConfig } from './a11y.js'
+import { baseConfig } from './base.js'
+import { compatConfig } from './compatLint.js'
+import { i18nConfig } from './i18n.js'
+import { modulesConfig } from './modules.js'
+import { pathConfig } from './path.js'
+import { perfectionistConfig } from './perfectionist.js'
+import { simpleSortConfig } from './simpleSort.js'
+import { spacingConfig } from './spacing.js'
+import { projectStructureConfig } from './structure.js'
+import { tailwindConfig } from './tailwind.js'
+import { unicornConfig } from './unicorn.js'
+import { vitestConfig } from './vitest.js'
 
 export default antfu(
   baseConfig,
@@ -37,7 +38,6 @@ export default antfu(
         messageSyntaxVersion: '^9.0.0',
       },
     },
-
   },
   {
 
@@ -49,4 +49,4 @@ export default antfu(
       sourceType: 'module',
     },
   },
-)
+).prepend(projectStructureConfig)
