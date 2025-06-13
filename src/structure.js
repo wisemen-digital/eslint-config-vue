@@ -410,6 +410,9 @@ export const folderStructureConfig = createFolderStructure({
                   name: 'index.ts',
                 },
                 {
+                  name: 'components.ts',
+                },
+                {
                   name: '*',
                   children: [],
                 },
