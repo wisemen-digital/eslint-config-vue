@@ -204,6 +204,7 @@ const MOCKS_FOLDER = {
   ],
 }
 
+const MODELS_FILE_NAMING = '{camelCase}.model.ts|{camelCase}.builder.ts|{camelCase}.transformer.ts|{camelCase}.modelUtil.ts|{camelCase}.modelUtil.spec.ts|{camelCase}.modelUtil.test.ts'
 const MODELS_FOLDER = {
   name: 'models',
   children: [
@@ -211,13 +212,21 @@ const MODELS_FOLDER = {
       name: '{kebab-case}',
       children: [
         {
-          name: '{camelCase}.model.ts|{camelCase}.builder.ts|{camelCase}.transformer.ts|{camelCase}.modelUtil.ts|{camelCase}.modelUtil.spec.ts|{camelCase}.modelUtil.test.ts',
+          name: MODELS_FILE_NAMING,
         },
         {
           name: `create|update|delete|index|detail|{kebab-case}`,
           children: [
             {
-              name: '{camelCase}.model.ts|{camelCase}.builder.ts|{camelCase}.transformer.ts|{camelCase}.modelUtil.ts|{camelCase}.modelUtil.spec.ts|{camelCase}.modelUtil.test.ts',
+              name: MODELS_FILE_NAMING,
+            },
+            {
+              name: `create|update|delete|index|detail|{kebab-case}`,
+              children: [
+                {
+                  name: MODELS_FILE_NAMING,
+                },
+              ],
             },
           ],
         },
