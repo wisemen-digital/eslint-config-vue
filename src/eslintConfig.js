@@ -14,6 +14,7 @@ import { projectStructureConfig } from './structure.js'
 import { tailwindConfig } from './tailwind.js'
 import { unicornConfig } from './unicorn.js'
 import { vitestConfig } from './vitest.js'
+import { wisemenConfig } from './wisemen.js'
 
 export default antfu(
   baseConfig,
@@ -28,6 +29,7 @@ export default antfu(
   tailwindConfig,
   modulesConfig,
   pathConfig,
+  wisemenConfig,
   {
     settings: {
       'import/extensions': [

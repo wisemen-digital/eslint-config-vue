@@ -13,6 +13,7 @@ import { spacingConfig } from './src/spacing.js'
 import { tailwindConfig } from './src/tailwind.js'
 import { unicornConfig } from './src/unicorn.js'
 import { vitestConfig } from './src/vitest.js'
+import { wisemenConfig } from './src/wisemen.js'
 
 export default antfu(
   baseConfig,
@@ -23,6 +24,7 @@ export default antfu(
   ...compatConfig,
   simpleSortConfig,
   vitestConfig,
+  wisemenConfig,
   i18nConfig,
   tailwindConfig,
   modulesConfig,
