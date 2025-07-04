@@ -5,12 +5,15 @@ import { a11yConfig } from './src/a11y.js'
 import { baseConfig } from './src/base.js'
 import { compatConfig } from './src/compatLint.js'
 import { i18nConfig } from './src/i18n.js'
+import { modulesConfig } from './src/modules.js'
+import { pathConfig } from './src/path.js'
 import { perfectionistConfig } from './src/perfectionist.js'
 import { simpleSortConfig } from './src/simpleSort.js'
 import { spacingConfig } from './src/spacing.js'
 import { tailwindConfig } from './src/tailwind.js'
 import { unicornConfig } from './src/unicorn.js'
 import { vitestConfig } from './src/vitest.js'
+import { wisemenConfig } from './src/wisemen.js'
 
 export default antfu(
   baseConfig,
@@ -21,8 +24,11 @@ export default antfu(
   ...compatConfig,
   simpleSortConfig,
   vitestConfig,
+  wisemenConfig,
   i18nConfig,
   tailwindConfig,
+  modulesConfig,
+  pathConfig,
   {
     settings: {
       'import/extensions': [
