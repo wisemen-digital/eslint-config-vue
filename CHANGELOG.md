@@ -1,3 +1,18 @@
+## [1.6.0] (2025-06-12)
+- **Project structure:** Enforced project structure.
+- **Module encapsulation:** Enforced module encapsulation.
+- **Path**: Updated path rules package to flat config.
+- **Wisemen:** Made custom rules package. Enabled rule `explicit-function-return-type-with-regex` and made it so composables don't require a return type.
+
+## [1.5.1] (2025-06-05) 
+- **Tailwindcss:** enforce-consistent-variable-syntax rule ignores classes with custom-.
+
+
+## [1.5.0] (2025-05-28) 
+- **Tailwindcss:** enforce-consistent-variable-syntax rule enabled.
+- **Chore**: Updated all packages to latest versions.
+
+
 ## [1.4.0] (2025-05-28) 
 - **Tailwindcss:** Updated to eslint-plugin-better-tailwind, enabling conficted classes and unregistered classes rules.
 

@@ -90,7 +90,7 @@ export const baseConfig = {
     'style/object-property-newline': [
       'error',
     ],
-    'ts/explicit-function-return-type': 'error',
+    'ts/explicit-function-return-type': 'off',
     'unicorn/consistent-function-scoping': 'error',
     'vue/attributes-order': [
       'error',
